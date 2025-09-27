@@ -1,0 +1,5 @@
+ex 20. Q1. secondes depuis le 1er janvier 1970 (le 5 septembre 2025) = 55*365*24*60*60+8*30*60*60<2^31-1, donc ça rentre
+Q2. Jusqu'en janvier 2038 à peu près
+
+ex 21. Q2. Les valeurs de x sont égales, de même pour les valeurs de y.
+Q3. Idem.
