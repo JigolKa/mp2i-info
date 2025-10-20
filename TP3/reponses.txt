@@ -1,0 +1,15 @@
+ex6.    1. Les tableaux sont des pointeurs
+
+ex9.    1a) les lettres majuscules et minuscules ont les codes ascii allant de 65 à 90 et de 97 à 122, respectivement
+        b) de 48 à 57
+        c) 92
+        d) 39
+        2a) 0x20=32 => ' '
+        b) 0x28=40 => '('
+        c) 0x29=41 => ')'
+
+ex10.   Il devrait afficher le contenu de str jusqu'à un caractère nul, qui annonce la fin de la chaîne. Il va donc afficher SAULT
+
+ex12.   1) La mémoire stockée après buf est supprimée
+        2) Les 2 chaînes de caractères étant stockées l'une après l'autre, la 1ere sera fusionnée avec la 2e car il n'y a plus de caractère nul.
+        
