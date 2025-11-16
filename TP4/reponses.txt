@@ -1,0 +1,26 @@
+ex1
+1. Ils correspondent aux codes ascii des caractères présent dans le ficher + le caractère nul '\0'
+2. Le fichier contient 4 octets, 28 00 00 00. Le fichier ne s'ouvre pas correctement. C'est le petit boutisme car l'octet de poids faible est en premier
+
+ex6
+1. argv[0] représente le nom de l'exécutable
+
+ex11
+1. Pour pouvoir modifier le contenu du char*
+
+ex12
+1.
+
+
+ @    @ 
+  @   @ 
+   @ @
+    @
+   @
+ @@
+2. On va d'abord essayer de séparer la phrases avec le bon nombre de caractères pour laisser des mots entiers
+cela implique que le nombre de caractères est >= à la longueur maximale de tous les mots
+sinon, on ne pourra pas afficher le mot le plus long
+
+Ensuite, il faut pouvoir fusionner les matrices de caractères pour chaque ligne
+Enfin, on affiche ligne par ligne la matrice fusionnée correspondante

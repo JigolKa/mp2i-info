@@ -1,0 +1,37 @@
+ex 2: 
+0 && 0 = 0
+0 && 1 = 0
+1 && 0 = 0
+1 && 1 = 1
+
+0 || 0 = 0
+1 || 0 = 1
+0 || 1 = 1
+1 || 1 = 1
+
+ex 8:
+On peut utiliser la dichotomie pour trouver la réponse en un nombre d'étapes inférieur à log2(b-a+1), où l'intervalle [a,b] est l'ensemble auquel le nombre à deviner appartient.
+
+ex 11:
+x=9, n=6 => 17
+x=77, n=128 => 2
+x=1023, n=729 => 2
+x=1234567, n=52397 => 1
+
+x=1 => 0
+x=26 => 10
+x=27 => 111
+x=28 => 18
+x=77030 => 107
+x=77031 => 350
+
+N=10 => 19
+N=100 => 118
+N=1000 => 178
+N=10000 => 261
+N=100000 => 350
+N=1000000 => 524
+N=10000000 => 685
+
+à peu près 13s
+On peut utiliser une liste pour stocker le temps de vol de chaque i pour i de 1 à N et ainsi éviter de nombreux calculs redondants.
