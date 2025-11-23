@@ -1,0 +1,1155 @@
+213
+6 
+Vous ne savez plus rien de ce qu'il y avait avant, mais en tout cas, vous vous réveillez au milieu d'une grande pièce inconnue. Les murs sont immaculés de blanc, et la pièce ne comporte que du vide. Vous êtes déstabilisé, mais des portes apparaissent soudain face à vous, au nombre de 5, écarlates. Si vous voulez sortir d'ici, il va falloir faire un choix.
+Vous décidez de rester ici voir si il n'y a pas des indices à propos de votre présence
+3
+Vous empruntez la première porte
+4
+Vous empruntez la deuxième porte
+5
+Vous empruntez la troisième porte
+74
+Vous empruntez la quatrième porte
+6
+Vous empruntez la cinquième porte
+7
+0 
+Vous vous levez, sans savoir comment. Vous ne sentez rien. Vous ne voyez rien. Vous n'entendez rien. Vous êtes dans le néant. Vous n'avez même pas faim. Vous êtes juste inexistant. Tout ce que vous pouvez faire est marcher. Vous marchez, vous marchez, mais vous n'arrivez nulle part. Toujours le noir. Vous voilà, perdu pour l'éternité dans ce lieu. Et sans réponses. Vous avez perdu.
+0 
+Quand vous arrivez à faire le point sur le décor, vous vous voyez fixer un tableau. Dessiné à l'intérieur, un jeune homme. Il ressemble à celui que vous êtes maintenant. Autour, deux parents, une mère à l'air aimante et un père sévère Accolée au jeune homme, une belle jeune femme, qui l'enlace doucement.. Derrière, une fusée futuriste décolle, dans un éclat de couleurs vives, sans bruit. Scène absurde, chevauchant la fusée, un chevalier pointe son épée vers le ciel. Et tout autour, des miroirs réfléchissent la scène, l'amplifient. Tant de couleurs, tant de beauté vous donnent les larmes aux yeux. Vous avez gagné.
+1 
+Malheureusement, il semble que la pièce est vide, totalement. Cela ne va pas vous aider. Tout à coup, un gros bruit se fait entendre, et c'est soudain comme si la pièce se rétractait. Les murs se rapprochent, à une vitesse bien trop grande d'après vous, qui êtes encore entre eux. Il ne reste d'ailleurs plus qu'une porte, les autres ont disparues. Si vous ne voulez pas finir écrasé entre les murs de la pièce, il semble que vous devez l'emprunter.
+Vous courez vers la porte, l'ouvrez, et la passez
+74
+1 
+Dès que vous passez la porte, vous basculez dans le noir. Et vous tombez, vous tombez indéfiniment, tant et si bien que vous finissez par trouver le sommeil.
+Vous vous réveillez finalement, plus tard, après un temps indéterminé
+8
+1 
+Après avoir passé la porte, voilà que vous êtes projeté à toute vitesse dans des paysages, des paysages qui semblent pleins de verdure, ruraux. Vôtre tête tourne, tourne, et vous semblez perdre toute mémoire. Quand enfin vous semblez être stable, après plusieurs minutes, vous ouvrez les yeux. Une barre de chargement, à moitié verte, avance doucement, face à vous.
+Vous attendez, ne pouvant rien faire d'autre
+38
+1 
+Alors que vous ouvrez la porte, un courant d'air fort vous attire. Vous ne pouvez pas lutter, et vous êtes projeté dans une sorte de tube. Vous vous cognez, et malgré vos efforts, vous perdez connaissance.
+Un bruit fort vous réveille
+162
+1 
+La porte, quand vous la touchez, se transforme. Elle devient molle, mais forte, elle vous entoure, vous enveloppe, cache vos yeux. Puis elle vous contraint à plier les genoux, et devient un canapé. Vous êtes assis, confortablement, et alors la masse molle se retire de vos yeux.
+Vous entreprenez d'ouvrir les yeux pour comprendre ce qui vous est arrivé
+120
+3 
+Vous avez fermé les yeux, il vous semble. Vous ne savez plus bien. En tout cas, quand vous ouvrez les yeux, vous êtes dans une chambre d'adolescent, dans un lit. Vous baissez les yeux, et vous vous rendez compte que vous êtes aussi un adolescent, désormais. Décidément, qu'est-ce qu'il vous arrive ? Il vous faut des réponses.
+Vous fouillez dans la chambre pour avoir des indices
+9
+Vous sortez de la chambre par la porte devant vous. Vous avez besoin d'agir !
+14
+Vous tenter de vous rendormir, en espérant que ce mauvais rêve passe
+11
+2 
+Malheureusement, malgré vos efforts, vous ne trouvez rien. C'est une chambre tout ce qu'il y a de plus classique. Elle ne vous dit rien, ce n'est en tout cas pas la votre. Peut-être est-ce celle d'une de vos connaissance ? Il ne vous semble pas. Cependant, vous voyez un album photo posé sur une étagère. Vous pourriez aller vérifier, peut-être ?
+Vous allez jeter un coup d'oeil à l'album
+10
+Vous sortez de la chambre, peut-être qu'il y aura plus d'information dehors
+14
+2 
+En ouvrant l'album, vous êtes soudain assaillis de souvenirs, des souvenirs qui ne semblent pas vous appartenir. Des jeunes gens défilent aussi bien dans les pages que vous tournez que dans votre esprit : Et toujours, inlassablement, celui à qui la chambre appartenait. Il s'amusait, travaillait un peu, pas beaucoup, comme tous les adolescents. Et il excellait. Vous sentez que vous pouvez continuer à parcourir ses souvenirs, mais soudain vous avez mal à la tête.
+Vous continuez, la curiosité est un de vos plus gros défauts
+11
+Vous vous arrêtez, vous reviendrez peut-être plus tard
+12
+1 
+Petit à petit, la tête vous tourne, vous délirez, vous sombrez et trouvez le sommeil. Petit à petit, vous vous sentez de mieux en mieux, et vous commencez à oublier, tout disparaît de votre esprit, le vide s'installe.
+Vous vous réveillez au bout d'un temps inestimable
+0
+2 
+Votre tête tourne, mais au bout de quelques minutes, vous reprenez vos esprits. Alors que vous ouvrez vos pupilles, vous entendez des cris, au loin. Vous ne comprenez pas d'où cela vient, mais soudain, vous voyez que la fenêtre de la chambre, fermée il y avait cinq minutes, est désormais ouverte. Dehors, deux personnes crient. Vous ne voyez pas bien, même en vous approchant.
+Ce n'est pas vos affaires. Vous préférez explorer la maison et sortir de la chambre
+14
+Vous sentez que vous devez aller voir, au fond de vous. Il ne semble pas dur de sauter de la fenêtre, vous n'êtes qu'à quelques mètres du sol. Vous sautez pour aller retrouver ces gens
+13
+1 
+Alors que vous entamez une chute que ne devrait durer que quelques secondes, elle s'éternise. Plusieurs secondes, puis plusieurs dizaines de secondes, puis plusieurs minutes. Vous atterrissez enfin, et devant quelqu'un. Un belle jeune femme, inconnue.
+La mémoire vous revient, tout à coup. C'est la fille que vous aimez ; celle dont vous voulez partager la vie, pour qui vous faites tant d'efforts
+130
+2 
+Vous vous avancez vers la porte, quand tout à coup, une envie d'aller au petit coin vous détourne de votre quête.
+Vous courez vers les toilettes que vous avez repéré dans la chambre
+15
+Cela attendra. Vous ouvrez la porte et pénétrez dans le couloir
+16
+1 
+Vous faites vos besoins, et tirez la chasse. Mais la chasse commence à faire un bruit étrange. Et elle tourbillonne de plus en plus vite. Et voilà qu'elle émet une alarme. BIP-BIP-BIP. Et c'est maintenant vous qu'elle attire, imperceptiblement. Puis vivement, et alors vous ne pouvez plus rien faire.
+Projeté dans les tuyaux d'égouts, vous vous cognez et perdez connaissance
+162
+2 
+Vous pénétrez dans le couloir. La maison sent bon. Elle sent une de ces odeurs de lessives caractéristiques des logis. Vous souriez, vous vous sentez bien. Au loin, il vous semble entendre une voix vous appeler en criant.
+Qu'importe, vous continuez à explorer la maison, surtout qu'il y a un bureau plein de papiers, à gauche
+17
+Vous suivez le son, pour arriver devant une porte
+22
+1 
+Vous entrez dans le bureau. Il n'y a personne. Vous fouillez un peu dans les papiers, et trouvez quelques informations sur vous. Si vous réussissez votre année, vous devez être inscrit à un programme spatial. Vous souriez, c'est cool. Visiblement, une évaluation importante aura lieu, bientôt. Mais vous ne savez même pas quel jour on est. Dans votre lecture des papiers, vous n'entendez pas les pas qui entrent. Un raclement de gorge vous fait revenir à la réalité.
+Vous tournez la tête pour voir qui est entré, un peu apeuré
+18
+1 
+Un homme est entré. Il a une carrure imposante. Il vous regarde avec un air méchant. Il soupire, l'air énervé. D'une grosse voix, il dit : "Qu'est-ce que tu fais là ? Va travailler ! Tu sais quel jour on est, demain ?"
+Vous êtes intimidé, et vous obéissez, vous dirigeant vers la porte
+19
+1 
+Alors que vous passez près de lui, l'homme dégaine sa main, et vous gifle violemment. Il marmonne : "Ça t'apprendra ..." Vous avez mal, mais vous savez, sans savoir pourquoi, peut-être par peur, qu'il ne faut pas répliquer.
+Vous sortez d'un pas rapide et retournez dans la chambre où vous êtes arrivé
+20
+2 
+Dans la chambre, vous êtes tout à coup triste. Vous avez mal, vous avez envie de pleurer. Des larmes commençent à couler de vos joues. Il vous faut vous réconforter, sinon vous sentez que vous allez craquer. Toute cette incompréhension vous pèse. Et voilà justement une console de jeu vidéos.
+Vous la prenez, et lancez une partie
+21
+Vous préférez aller dormir, pour oublier la douleur
+33
+1 
+Vous lancez le jeu. Mais dès que vous pressez le bouton PLAY, tout à coup, vous êtes littéralement envoyé dans le jeu. Vous êtes maintenant le personnage. Vous ressentez, vous voyez tout comme lui. Encore une fois, votre identité a changé. Tout devient noir, le décor change. Une barre de chargement se remplit, petit à petit, devant vous.
+Vous attendez, ne pouvant rien faire d'autre, comme bloqué
+38
+2 
+Vous ouvrez la porte, et enfin, vous entendez ce que l'on vous dit. Une femme crie "Viens manger !" Elle a une allure maternelle. Alors qu'elle vous voit arriver, elle vous regarde en souriant : "Ah ! Te voilà ! Tu vas pouvoir manger avant ton père !"
+Vous restez perplexe : vous ne savez pas de qui elle parle, ni même qui elle est
+23
+Vous allez prendre une chaise et vous asseoir
+27
+3 
+Elle a l'air étonnée, elle a l'air d'avoir peur pour vous. Elle crie : "Chéri !! Notre fils est étrange, il ne réagit à rien !!!" Puis immédiatement, elle se couvre la bouche d'une main, comme si elle avait dit quelque chose qu'elle n'aurait pas dû dire. Des bruits de pas violents se font entendre dans le couloir. Un homme vigoureux entre. Il gronde : "QUOI ENCORE ? IL VEUT QUOI, CE MERDEUX ?" Vous avez peur, mais surtout, vous ne comprenez pas ce qu'il se passe. Tout à coup, le poing de l'homme s'abat sur votre visage. Vous avez mal, mais il vous faut réagir, parce que vous êtes sur qu'il va recommencer.
+Vous mêlez l'homme, après tout vous vous sentez en pleine forme, et vous êtes visiblement plus musclé et jeune que lui
+24
+Vous fuyez, empruntant la fenêtre. Vous savez être peu haut par rapport au sol
+26
+Vous courez pour sortir par la porte, contournant l'homme
+25
+1 
+Le monstre est bien plus fort que vous, et très vite, vous ne pouvez plus lutter. Vous êtes impuissant face à tant de force, de colère. Il lève le poing, et vous frappe. Encore, et encore. Tout disparaît autour de vous, tout devient noir. Vous criez, mais ça ne s'arrête pas, vous ne comprenez pas.
+Vous finissez par vous évanouir de douleur
+1
+1 
+Alors que vous allez passer la porte, elle se transforme en miroir. Vous apparaissez dessus. Pour la première fois, vous avez le temps de vous voir. En réalité, vous n'avez pas vraiment le temps, puisque, quelque instants plus tard, votre reflet s'anime et vous attrape, avec une force monstrueuse.
+Vous passez à travers le miroir, sous son attraction
+78
+1 
+Votre chute de la fenêtre va très vite. Sauf que vous atterrissez ... dans un canapé. Et de plus, les yeux fermés, comme avec de la colle. L'ambiance a changé du tout au tout, maintenant bien plus douce. Vous ne comprenez rien.
+Enfin, vos yeux se délient, et vous tentez de les ouvrir
+120
+2 
+Elle vous sert un bol de soupe, vous commencez à le boire. Mine de rien, même si vous êtes complètement perdu, ça fait du bien. La femme vous regarde d'un air doux. Vous comprenez que c'est votre mère. Vous lui souriez en retour. Elle dit, d'une voix triste : "Si seulement ton père t'aimait comme moi ... Il ne veut que ta réussite ... Pff ..." Vous ne comprenez pas.
+Vous acquiescez, comme si vous aviez compris
+28
+Vous demandez plus de précisions
+29
+1 
+Elle soupire. "Allez, vas-t-en, avant qu'il n'arrive ..." Vous sortez de table et retournez dans votre chambre, comme poussé par une force invisible. Il fait déjà nuit, et vos rideaux sont fermés. Vous ne comprenez pas tout, mais vous êtes terriblement fatigué, d'un coup.
+Vous vous effondrez sur votre lit, et vous endormez aussitôt
+33
+3 
+Elle vous regarde un instant, l'air un peu étonnée. Puis elle répond : "Tu sais bien comment il est ... Allez, tu ferais bien d'aller réviser, c'est important demain ..." Vous vous levez et partez en direction de votre chambre, comme guidé par une main invisible. Sur votre lit a été disposé un cahier.
+Vous l'ouvrez pour réviser
+30
+Vous avez la flemme, et vous voulez vous amuser. Vous préférez lancer la console qui vous fait de l'oeil depuis que vous êtes ici
+21
+Vous êtes fatigué de toute cette incompréhension. Du sommeil vous sera plus profitable. Vous vous endormez
+33
+2 
+Vous l'ouvrez pour réviser, et commencez à lire. C'est des maths, niveau terminale, tout ce qu'il y a de plus simple.
+Vous êtes bon en maths, pas besoin, mieux vaut chercher des indices sur votre situation ici
+31
+Un petit rafraîchissement ne vous fera pas de mal, même si c'est barbant. Vous continuez la lecture
+32
+1 
+Alors que vous voulez vous lever, le sommeil vous prend tout à coup. Toutes ces émotions vous ont épuisé.
+Vous tombez sur votre lit et vous endormez
+33
+1 
+En haut d'une page, vous voyez apparaître une inscription, au crayon à papier : "Quand vous savez pas, c'est toujours la réponse 3 : Tout le monde aime les 3, c'est joli !" Vous souriez, c'est marrant de donner des astuces aussi bêtes.
+Vous finissez, à force d'abîmer vos yeux dans la pénombre, par vous endormir
+33
+7 
+Vous vous réveillez. Il est tôt, il vous semble. Puis tout se passe comme dans une rêve. Vous n'avez pas de contrôle sur vos actions. Vous allez en cours. Vous dites bonjours à une floppée de gens que vous ne connaissez pas. Puis, on vous distribue une feuille. Le prof dit que c'est important, et d'autres choses, mais vous ne comprenez pas tout, comme dans un brouillard auditif. Vous commencez à lire la feuille. C'est un contrôle de maths. Facile. Vous répondez. Et puis la dernière question vous laisse perplexe : "Quelle est la bonne réponse ?" Et c'est tout. Il vous faut pourtant répondre.
+Réponse 1
+34
+Réponse 2
+34
+Réponse 3
+36
+Réponse 4
+34
+Réponse 5
+34
+Réponse 6
+34
+Réponse 7
+34
+1 
+Finalement, il vous faut rendre votre copie. Vous ne comprenez simplement pas cette dernière question. Pourtant, quand vous rendez votre copie, le prof ne regarde qu'elle. Il vous regarde, fixement, puis soupire. Il barre, en rouge, annote la copie d'un énorme 0/20, et vous la rend, un air déçu.
+Vous sortez de la salle, sans n'avoir rien compris
+35
+1 
+Étrangement, en sortant, votre père est là. Lui aussi ne semble qu'intéressé par la copie. Il vous l'arrache des mains, telle une bête. Il voit la note, il fulmine. Il lève le poing, et vous frappe. Encore, et encore. Tout disparaît autour de vous, tout devient noir. Vous criez, mais ça ne s'arrête pas, vous ne comprenez pas.
+Vous finissez par vous évanouir de douleur
+1
+1 
+Finalement, il vous faut rendre votre copie. Heureusement que vous avez compris cette dernière question. Alors, quand vous rendez votre copie, le prof ne regarde qu'elle. Il vous regarde, fixement, puis soupire, en souriant. Il entoure, en rouge, et annote la copie d'un énorme 20/20, puis vous la rend, un air satisfait.
+Vous sortez de la salle, sans avoir vraiment compris
+37
+1 
+Étrangement, en sortant, votre père est là. Lui aussi ne semble qu'intéressé par la copie. Il vous l'arrache des mains, telle une bête. Il voit la note, et sourit. Votre mère apparaît à ses côtés, il l'embrasse. Le voir heureux vous rend heureux, de plus en plus heureux. Et tout disparaît autour de vous, tout se transforme.
+Vous clignez des yeux, et découvrez un spectacle magnifique, autour de vous
+2
+2 
+Au dessus de votre tête flotte un nom qui vous est familier. Le chargement s'achève et vous arrivez dans un petit village. Vous vous rendez compte que vous possédez une épée mais votre bourse est désespérement vide. Vous hésitez entre reprendre des forces ou vous lancez directement contre le boss final, le Roi des démons. Au loin, un PNJ âgé vous interpelle.
+Vous le rejoignez pour voir ce qu'il a à vous dire
+40
+Vous l'ignorez et préférez vous rendre dans la Forêt des Morts pour affronter le Roi des démons
+39
+1 
+Vous entrez dans la Forêt des Morts, arme à la main. Rempli de détermination, vous avancez, prêt à anéantir le Roi. Vous êtes frappés par la foudre avant d'atteindre votre cible. Votre corps devient pixels, un écran noir annonce votre mort et vous revenez dans un décor connu.
+Vous recommencez votre quête
+38
+3 
+Vous rejoignez l'homme qui vous approche d'un air suspect et vous murmure : "Toi, tu es en manque d'argent ! Mais ne t'inquiètes pas, je peux remédier à ton problème, si tu acceptes de me rendre un petit service !"
+Vous acceptez
+61
+Vous refusez poliment
+51
+Vous lui enfoncez votre épée dans la gorge et lui arrachez la bourse d'argent qu'il a autour de la ceinture
+41
+2 
+Vous vous situez au milieu d'un marché. Vous êtes entouré de dizaines de personnes. Un homme se met à hurler. Vous venez de tuer le vieux sage du village. Un garde vous aperçoit en plein délit et cours dans votre direction. Les villageois, par amour pour leur défunt, se mettent à vos trousses.
+Vous courez vers la Forêt des Morts, pour les fuir et en finir avec tout ça
+39
+Vous vous rendez
+42
+1 
+Encerclés par une foule de gens qui veulent désormais votre tête vous levez les bras et vous rendez. Un homme s'approche de vous et vous traîne jusqu'au cachot où il vous enferme.
+Vous patientez
+43
+1 
+Le temps passe lentement dans un cachot et vous sentez votre ventre se creuser, mais rien ne se passe.
+Vous continuez d'attendre
+44
+1 
+Malgré les heures qui défilent vous ne trouvez aucun moyen de vous échapper de ce cachot. Vous avez mal au ventre.
+Vous continuez d'attendre
+45
+4 
+Enfin, une femme pénètre dans la cellule, l'humeur mauvaise et seulement armée d'une petite dague.
+Vous écoutez ce qu'elle a à vous dire
+49
+Vous vous ruez vers la sortie sans attendre
+46
+Vous lui déclarez votre flamme
+47
+Vous essayez de l'assommer d'un coup de pied retourné
+48
+1 
+Étonnament, vous arrivez à atteindre la sortie. Cependant, alors que vous passez la porte, vous vous rendez compte qu'elle donne sur un endroit étrange. Vous avez été transporté dans un autre lieu, peut-être même un autre monde.
+Vous examinez où vous êtes arrivé
+74
+1 
+Vous vous mettez à genou devant elle, prenez votre voix la plus mielleuse et lui déclarez votre amour le plus sincère. La jeune femme vous regarde étrangement avant d'être prise d'une incontrôlable crise de rire. Humilié, vous préférez briser le quatrième mur et vous recommencez l'aventure.
+Recommencer cette aventure
+38
+1 
+Vous vous ruez sur elle, coude en avant, prêt à la plaquer au sol mais elle vous agrippe le bras vous plaque par terre sans que vous ayez pu vous en rendre compte. Votre crâne heurte une pierre pointu et se fend en deux.
+Vous êtes mort, et tombez dans un sommeil éternel
+1
+1 
+La femme vous regarde, patiente un moment et finit par prendre la parole "Bien joué, aventurier, sans vous en rendre compte vous avez terrassé le plus grand bandit de la région, le village vous est gratifiant, venez suivez moi, un festin et votre poids en or vous attend !'
+Vous la suivez
+50
+1 
+Vous avez réussi votre vie, d'une manière bien étrange certes, mais vous avez gagné et un buffet est maintenant organisé en votre nom.Bravo ! Petit à petit, dans odeurs de nourriture et de boissons,le monde autour de vous et ses couleurs se brouillent.
+Vous clignez des yeux pour comprendre ce qu'il vous arrive
+2
+2 
+Sans argent, vous errez dans le village à la recherche d'un toit pour la nuit. L'écurie à l'orée de la forêt semble ouverte et sans surveillance.
+Vous vous y faufilez discrètement
+53
+Vous continuez à errer
+52
+1 
+Vous déboulez sur un lieu qui vous est inconnu. Les arbres changent constamment de place et un brouillard flotte à vos pieds. Vous paniquez et vous vous mettez à accélérer le pas, sans regarder derrière vous. Vous ne pouvez même pas revenir sur vos traces, la forêt forme un mystérieux labyrinthe dont vous ne pouvez vous échappez. Vous êtes frappé à l'épaule et vous poussez un cri de douleur. Des bruits se rapprochent et bientôt une armée de démons vous fait face. Vous n'avez même pas le temps d'attaquer qu'un coup fatal vous brise en pixels. Un écran noir annonce votre mort et vous revenez vers un décor connu.
+Vous recommencez votre quête
+38
+2 
+Vous ne voyez pas de nourriture, mais la paille forme un excellent lit. Vous décidez de vous reposer après votre longue aventure. Quelqu'un vous réveille quelques heures plus tard.
+Vous vous excusez et vous expliquez votre situation
+56
+Vous l'égorgez afin qu'il n'attire pas l'attention
+54
+3 
+Vous sortez en panique de l'écurie, en volant au passage le sac de carottes de l'inconnue. Vous n'avez pas de tissus pour nettoyer votre épée, luisante de sang. La panique vous rattrape, elle vous fait perdre la raison.
+Vous courez sans voir devant vous, affolé
+55
+Sous le choc des émotions, vous vous évanouissez
+1
+Vous détalez en direction de la forêt la plus proche, sans regarder les panneaux
+52
+1 
+Vous dépassez une foule compacte, bousculant les gens sans vous y attardez. Vous devez être rapide pour échapper aux autres. Le chaos que vous engendrez dans votre suite alerte les gardes. La foule vous entoure et les gardes vous encerclent ; vous êtes pris au piège. Votre épée brille du sang de l'innocente que vous avez tué.
+Vous vous rendez
+42
+2 
+Vous avez de la chance, la femme devant vous est la tenancière d'une auberge. Son mari s'occupe de l'écurie pour accueillir les voyageurs. Elle prend pitié de vous, vous raconte qu'elle a toujours voulu un enfant, mais qu'elle n'a jamais pu. Elle vous offre le repas et vous propose de rester pour la nuit.
+Vous acceptez
+57
+Vous déclinez pour tuer le Roi des démons
+58
+1 
+Vous vous sentez à l'aise et elle vous accompagne vers une chambre d'hôte. Le lit est incroyablement confortable.
+Vous vous endormez dans le lit
+8
+2 
+Vous entrez dans la Forêt des Morts, arme à la main. Vous êtes enfin prêt à vaincre ce Roi des démons. Une fois cela fait, le jeu sera terminé. Vous slalommez entre les arbres dans ce labyrinthe mouvant en tentant de rester furtif. Vous dégagez le chemin de quelques démons mineurs avant d'atteindre la fosse dans laquelle se tient le Boss.
+Vous l'attaquez directement, emporté par la fougue de finir le jeu
+59
+Vous essayez de passer par l'arrière, au risque de vous faire repérer
+60
+1 
+Vous arrivez devant le Roi des démons, l'arme pointée devant lui. Vous chargez et vous le frappez de plein fouet. Des démons s'acharnent à ses côtés mais vous les balayez bien rapidement avant de vous reconcentrer contre le Roi. Il change de forme et vous assène une attaque de foudre qui vous aurait achevé si vous n'aviez pas mangé. Vous profitez d'une seconde d'inadvertance pour lui porter le coup fatal. Une musique de célébration s'élève, les crédits se déroulent sous vos yeux alors que vous êtes couronnés et le jeu s'arrête sur un écran noir, dans lequel vous restez jusqu'à ce que le décor devant vos yeux se floutent.
+Vous perdez conscience de ce qui vous entoure
+2
+1 
+Vous contournez le gouffre en restant sur une paroi précaire. Vous finissez par vous accroupir pour ne pas vous faire repérer par les démons mineurs. Vous renforcez votre poigne sur votre arme, craintif. Une lueur à votre gauche indique un téléporteur qui vous amènerait directement au centre de la salle.
+Vous prenez le téléporteur
+59
+2 
+"L'autre jour, en faisant une incantation, j'ai fait tomber mon bâton dans le lac près du Temple. Si tu plonges le chercher, je pourrais même exhaucer un souhait."
+Vous acceptez
+62
+Vous refusez fermement
+51
+2 
+Vous allez au lac avec le vieillard. Vous plongez la tête la première sans hésiter. L'eau est froide et vous n'êtes pas habitué aux algues. Vos yeux vous piquent lorsque vous les ouvrez. Quelque chose brille au fond de l'eau, a l'opposé de là où se trouve le bâton.
+Vous allez vers l'éclat
+71
+Vous récupérez le bâton
+63
+2 
+Vous récupérez enfin le bâton. Il est léger dans votre paume et d'apparence commune. Cela aurait pu être une simple brindille si vous ne sentiez pas la magie s'en dégager. Avec, vous pensez être plus fort. Vous remontez à la surface.
+Vous conservez le bâton
+64
+Vous restituez le bâton au vieillard
+65
+1 
+Le vieillard vous interpelle mais vous êtes plus rapide que lui et vous le distancez facilement. Son bâton est une arme de choix, bien plus puissante que votre petite épée. Vous n'avez toujours pas d'argent, ni de nourriture, Mais vous êtes confiant qu'avec votre nouvelle arme vous vaincrez le Roi des démons.
+Vous courez droit vers la Forêt des Morts
+39
+2 
+Vous rendez le bâton au vieillard, qui rajeunit dès qu'il le récupère. L'être devant vous est un personnage principal, vous reconnaissez son visage d'une couverture de jeu vidéo. Il vous remet une jolie somme d'argent comme convenu, sèche vos vêtements et vous propose un enchantement.
+Vous refusez et décidez d'aller acheter à manger
+69
+Intrigué, vous acceptez
+66
+6 
+Le magicien vous regarde calmement. "Avez-vous une idée de ce que vous souhaitez ?" Etrangement, vous sentez que le voeu n'est pas limité au jeu.
+"Je veux sortir d'ici."
+0
+"Je veux tout recommencer."
+8
+"Je veux retrouver l'amour."
+120
+"Je veux accomplir mon rêve d'enfant."
+162
+"Je veux rester ici et vaincre le Roi des démons."
+67
+"Je ne sais pas."
+74
+2 
+Le magicien sourit. "Je savais que je pouvais croire en vous. Suivez-moi, je vous offre le repas, vous devez être affamé et épuisé après tous ces efforts." Il montre d'un geste de la main sa modeste demeure, une étrange maison tarabiscotée aux tours inégales et aux tuiles affaissées.
+Vous acceptez, un repas gratuit ne se refuse pas
+68
+Vous refusez, le mage est gentil mais sa maison semble étrange
+69
+1 
+Le repas fut étrange, entre des viandes innomables et des végétaux inconnus, mais il fut étonnament très nourrissant. "Merci de bien vouloir sauver notre monde, jeune héros. J'ai failli oublier de vous donner ma bénédiction au nom de notre village, que votre quête soit couronnée de succès." Vous vous sentez reposé et endurci.
+Vous repartez dans la Forêt des Morts
+58
+1 
+A quelques pas se trouve une charmante auberge attenante à une écurie. La lumière qui s'en dégage, chaleureuse, vous semble accueillante. A l'intérieur une femme vient vous voir, un air doux peint sur le visage.
+Vous payez pour un repas
+70
+2 
+La tenancière vous sert un assortiment de mets généreux. Autour de vous la bonne humeur règne, la salle est parcourue de personnes se félicitant sur leur journée. Une fois terminée, la gérante vous propose de rester pour la nuit pour à peine trois pièces.
+Vous acceptez, charmé par l'ambiance
+57
+Vous refusez, vous devez tuer le Roi des démons
+58
+2 
+Vous êtes obnibulés par l'éclat. Sa lumière ne vous a jamais semblé aussi attirante. Elle est d'un doré pur qui rayonne à travers la végétation aquatique. Vous vous enfoncez toujours plus profondément dans les eaux, mais vous commencez à manquer d'air.
+Vous persévérez vers l'objet, persuadé qu'il fera votre richesse
+72
+Vous êtes plus raisonnable, vous retournez à la surface
+73
+1 
+Vous continuez votre nage, bien que ralenti par le manque d'air. Vous arrivez devant la source de lumière. Elle se met à bouger. Ce qui vous fait face est un gigantesque poisson lanterne, qui se réveille et ouvre grand la bouche.
+Vous êtes avalé et perdez connaissance
+1
+2 
+Vous émergez et prenez une grande inspiration. "Eh bien, même un jeune comme toi n'y arrive pas ? Merci d'avoir essayé, je demanderai à quelqu'un d'autre !"
+Vous réessayez et plongez à nouveau pour lui prouver tort
+63
+Vous abandonnez
+51
+3 
+Sans savoir comment, vous vous retrouvez dans une pièce aux murs couverts de miroirs. Cependant le reflet que vous y observez n'est pas le vôtre. Dans un coin, une imposante armoire trône.
+Vous faites demi-tour, intimidé par ces reflets inconnus
+75
+Vous vous approchez d'un miroir
+76
+Vous vous dirigez vers l'armoire
+85
+1 
+Vous empruntez la porte par laquelle vous êtes entré. Tout devient noir un instant, puis vous vous réveillez à même le sol, comme si vous vous étiez évanoui quelques secondes.
+Vous êtes à nouveau face aux portes du départ
+0
+2 
+Alors que vous détaillez le reflet qui vous fait face, il se met à bouger. Ses mains vous agrippent et vous tirent vers le miroir.
+Vous vous débattez autant que vous le pouvez
+77
+Vous vous laissez emporter
+78
+1 
+Vous avez beau vous débattre, les mais vous tirent inexorablement vers le miroir.
+Vous êtes piégé
+78
+3 
+Vous êtes maintenant de l'autre côté du miroir. Votre "reflet" vous demande d'un air désespéré : "suivez-moi, je vous en supplie !"
+Pris de pitié et de crainte, vous le suivez
+84
+Vous fuyez sans demander votre reste
+80
+Vous tentez de passer à travers le miroir dans l'autre sens
+79
+2 
+Le miroir se révèle impénétrable. Il n'y a plus qu'une échappatoire, et c'est de ce côté du miroir.
+Vous fuyez
+80
+Vous revenez sur votre décision et suivez l'inconnu
+84
+2 
+Vous courez dans la pièce où vous vous trouviez, mais inversée. Vous arrivez devant la porte.
+Vous ouvrez la porte
+81
+Vous tentez de traverser un miroir
+79
+2 
+Derrière la porte, une pièce sombre, à l'aspect sale. Alors que vous y entrez, les miroirs s'éteignent les uns après les autres.
+Vous continuez à avancer
+82
+Vous faites demi-tour
+83
+1 
+Vous avancez encore et encore, mais l'espace semble se tordre. Vous vous retrouvez au même point qu'il y a peu.
+Vous n'avez plus le choix, il faut faire demi-tour
+83
+1 
+La pièce que vous avez quittée a radicalement changé. Il fait sombre, très sombre, et vous vous sentez lourd, très lourd.
+Vous vous écroulez sur le sol
+1
+1 
+L'homme vous met quelque chose dans les mains. Sans plus d'explication, il ouvre l'armoire et vous pousse dedans.
+Tout devient noir, et une barre de chargement se remplit doucement devant vous
+38
+4 
+L'imposante armoire a une grande porte et deux tiroirs.
+Vous ouvrez la porte de l'armoire
+86
+Vous tentez d'ouvrir le tiroir de gauche
+109
+Vous tentez d'ouvrir le tiroir de droite
+108
+Vous délaissez l'armoire pour vous intéresser aux miroirs
+76
+3 
+Derrière la porte de l'armoire, des vestes suspendues à des cintres.
+Vous prenez une veste
+87
+Vous écartez les vestes
+106
+Vous refermez la porte
+85
+3 
+La veste paraît lourde dans vos mains, comme si elle contenait quelque-chose.
+Vous reposez la veste
+86
+Vous fouillez les poches
+88
+Vous essayez de porter la veste
+90
+2 
+Dans la veste, vous trouvez une dague, ainsi qu'un portefeuille
+Vous reposez tout ça dans la veste
+87
+Vous regardez dans le portefeuille
+89
+2 
+Alors que vous inspectez le contenu du portefeuille, une voix retentit : "Qu'est-ce que vous faites là ?"
+Vous vous retournez
+92
+Vous l'ignorez
+90
+2 
+Une voix retentit de nouveau, il est impossible que vous ne l'ayez pas entendu cette fois : "retournez-vous !"
+Vous vous retournez
+92
+Vous continuez de l'ignorer
+91
+1 
+Vous sentez une lame froide pénétrer vos entrailles.
+Vous vous écroulez sur le sol
+1
+4 
+Vous reconnaissez le "reflet" que vous voyiez dans les miroirs. La pièce semble avoir changé de sens. Il vous demande de le suivre.
+Vous posez la veste et vous le suivez
+84
+Vous gardez la veste et vous le suivez
+94
+Vous vous enfuyez
+80
+Vous poignardez l'homme avec la dague
+93
+1 
+Vous regrettez aussitôt votre geste. Vous voyez que l'homme aussi possède une dague.
+L'homme dirige sa dague vers vous instinctivement
+91
+3 
+L'homme vous demande de reposer la veste.
+Vous faites mine de ne pas entendre
+95
+Vous posez la veste et le suivez
+84
+Vous poignardez l'homme avec la dague
+93
+2 
+L'homme est parti sans vérifier que vous aviez posé la veste.
+Vous le suivez
+96
+Vous vous enfuyez pendant qu'il a le dos tourné
+80
+2 
+L'homme ouvre une porte. Derrière, l'intérieur d'un café.
+Vous suivez l'homme dehors
+98
+Vous restez où vous êtes
+97
+1 
+La porte se referme brusquement. Peu à peu, la luminosité baisse.
+Vous perdez toute sensation et vous vous écroulez sur le sol
+1
+3 
+Dehors, plus aucune trace de l'homme.
+Vous vous asseyez dans le café
+99
+Vous partez à la recherche de l'homme dans la rue
+100
+Vous faites demi-tour et rentrez
+97
+1 
+Vous vous assoupissez un instant.
+Une odeur vous réveille
+120
+2 
+Vous arrivez dans une ruelle sombre. Devant vous, un groupe de gens joue aux fléchettes. Un homme vous remarque et vous fait signe de les rejoindre.
+Vous fuyez
+101
+Vous les rejoignez
+102
+1 
+Vous sentez soudain une fléchette transpercer votre dos.
+Tout devient noir autour de vous, vous vous écroulez
+1
+4 
+On vous propose de jouer. Le but est de faire le plus de points possible.
+Vous refusez poliment et partez
+101
+Vous prenez une fléchette et visez le centre de la cible
+103
+Vous prenez une fléchette et fermez les yeux avant de la lancer
+104
+Vous prenez une fléchette et visez le 60
+103
+1 
+Votre main tremble trop, la fléchette part à côté de la cible. Les autres joueurs ont tout d'un coup l'air plus menaçants. Vous remarquez qu'ils sont armés.
+Vous n'avez pas le temps de fuir que l'un d'entre eux se jette sur vous
+91
+2 
+Quand vous rouvrez les yeux la fléchette est en plein milieu de la cible. Une femme vous fait signe de la suivre.
+Vous la suivez
+105
+Vous partez
+101
+1 
+La femme ouvre une porte.
+Vous découvrez un drôle d'endroit
+2
+2 
+Derrière les vestes se trouve une porte.
+Vous ouvrez la porte
+107
+Vous remettez les vestes en place
+86
+1 
+Vous sentez une présence dans votre dos.
+On vous pousse violemment vers l'ouverture, vous perdez connaissance
+162
+2 
+Le tiroir est fermé à clé. Vous avez beau tirer, il ne s'ouvrira pas.
+Vous abandonnez
+85
+Vous essayez de forcer le tiroir
+108
+2 
+Une fumée verte s'échappe du tiroir. Paniqué, vous ne savez pas si vous pouvez la respirer.
+Vous retenez votre respiration
+111
+Vous continuez de respirer normalement
+110
+1 
+Vous respirez le gaz, vous perdez peu à peu conscience.
+Vous vous réveillez au bout d'un certain temps, il fait noir
+1
+3 
+Au fond du tiroir, vous remarquez un masque à gaz avec d'étranges lunettes.
+Vous mettez le masque
+113
+Vous restez en apnée
+112
+Vous reprenez votre souffle
+110
+1 
+Vous ne pouvez pas retenir votre respiration indéfiniment.
+Vous prenez une longue inspiration
+110
+3 
+A travers les lunettes, vous voyez la pièce sous un nouveau jour. Dans les miroirs, deux reflets différents. Il y a une femme et un homme.
+Vous enlevez le masque
+110
+Vous vous dirigez vers la femme
+117
+Vous vous dirigez vers l'homme
+114
+2 
+L'homme vous regarde d'un air amusé. Il vous dit : "Tuez moi, et vous êtes libre !"
+Vous lancez votre poing contre lui
+115
+Vous fermez les yeux
+116
+1 
+Le miroir se brise en mille morceaux. Sur chacun des morceaux, l'homme vous regarde, moqueur. Votre vue se brouille soudain.
+Vous perdez connaissance
+1
+1 
+L'homme a disparu de votre esprit.
+En rouvrant les yeux, vous voyez un nouveau décor
+2
+4 
+La femme vous propose une énigme : Le matin, je marche à quatre pattes. A midi, j'en ai deux. Le soir, j'en ai trois. Qui suis-je ?
+Partir sans répondre
+118
+Répondre : "Dieu"
+118
+Répondre : "Rien"
+118
+Répondre : "L'homme"
+119
+1 
+La femme fait un geste, et tout d'un coup le gaz entre dans votre masque.
+Vous le respirez
+110
+2 
+La femme vous sourit. Elle vous montre un miroir. Dans le reflet de votre oeil, vous remarquez un paysage.
+Vous regardez le paysage
+2
+Vous détournez le regard
+118
+2 
+Vous sursautez. Vous avez l'impression de vous réveiller, alors qu'il ne vous semble pas avoir dormi. Décidement, tout ça est bien étrange. Vos narines, avant même que vous n'ouvriez les yeux, ressentent une forte odeur de café. Et puis un peu de parfum, un agréable parfum inconnu. En ouvrant les yeux, vous découvrez une magnifique jeune fille qui vous fait face. Les cheveux brun, la peau mate, les yeux émeraude, elle vous fixe. Mais, elle a l'air un peu fâchée ...
+Vous lui demandez si tout va bien, ne comprenant rien
+121
+Vous attendez qu'elle parle, baissant les yeux sur votre café
+126
+3 
+Vous ne faites pas exprès, mais votre voix tremble. Vous êtes timide, visiblement. Elle vous fixe encore. Elle hausse un sourcil, l'air étonnée. "Je te retourne la question. Qu'est-ce qu'on fait là ? Qu'est-ce que tu voulais me dire ?"
+Vous gardez le silence, réfléchissant. Impossible de comprendre ce qu'il se passe
+122
+Vous souriez simplement. Peut-être paraîtrez vous neutre ainsi
+133
+Vous souriez, et ajoutez : "Plus tard ...", d'un air confiant
+140
+2 
+Elle soupire, alors que vous gardez simplement le silence en la fixant. "Bon, donc t'as rien à me dire ? Allez, salut, à la prochaine !" Elle se lève. Elle ne semblait d'ailleurs rien avoir pris à boire. Et puis elle se dirige vers la porte du café. Il a l'air de faire froid dehors.
+Vous ne savez même pas qui elle est, vous n'avez qu'à rester ici, pour faire le calme dans vos pensées
+123
+Vous vous levez. Vous vous sentez mal. Vous allez la suivre et vous excuser
+124
+1 
+Le calme vous envahit peu à peu. Tant et si bien que vous vous endormez. Plus tard, après un temps que vous ne sauriez évaluer, vous vous réveillez. Une porte est devant vous, et vous êtes dans une pièce totalement vide à part ça.
+Vous passez la porte
+74
+1 
+Une fois arrivé dehors, vous lui adressez la parole : "Désolé, je suis un peu fatigué. Je voulais pas te vexer." Étonnement, elle sourit, et hoche la tête, posant une main sur votre épaule. Vous êtes heureux que cela se soit passé ainsi.
+Maintenant, il vous faut continuer à assurer la bonne entente
+125
+3 
+Maintenant que vous êtes dehors avec elle, il vous faut trouver une activité. Et il vous faut à tout prix éviter les bourdes, vous le savez.
+Vous lui proposez une balade, malgré le froid mordant
+144
+Vous lui proposez d'aller au cinéma, en repérant un un peu plus loin
+148
+Vous lui demandez si un tour à la patinoire la tente
+152
+1 
+Elle prend la parole, d'une voix bien plus forte et menaçante que vous l'auriez imaginé. "Bon, ça va ? T'as rien à me dire ? Je fais quoi, moi, à attendre ici ?" Elle attend quelques secondes. Elle doit vous regarder dans les yeux, vous n'en savez rien, en réalité. "Hé ? Relève les yeux ! Il t'arrives quoi ?"
+Vous êtes déboussolé, vous ne comprenez pas qui elle est, ce qu'il vous faut faire. Vous relevez la tête et balbutiez des mots sans sens
+127
+2 
+Elle a l'air étonnée, puis elle s'adoucit, et vous sourit. "Ça va ? Hé ? C'est bon, j'suis pas énervée." C'est étonnant, on dirait qu'elle est plus âgée que vous, dans ses mots. Pourtant, elle doit avoir votre âge. 15, 16 ans peut-être ? "Bon. On fait quoi ? On sort ? J'ai plus rien à boire."
+Vous acquiescez, et vous allez dehors, avec elle, devant le café, sur le trottoir. Vous avez bien besoin d'air, et ça tombe bien, parce qu'il fait vraiment froid
+125
+Vous faites glisser votre café, intact, vers elle. La chaleur du lieu et son silence vous apaise, vous voulez rester
+128
+1 
+Elle sourit, l'air un peu surprise. "Merci, c'est gentil. T'es un type cool, tu sais. J'apprécie vraiment ce que t'as fait pour moi, tout à l'heure." Vous la fixez doucement. Au fond de vous, il vous semble que, malgré ses grands airs, elle est fragile. Vous commencez à l'apprécier.
+Elle a l'air décidée à parler. Vous la laissez faire
+129
+3 
+"Je n'ai rien fait, moi. Je n'ai rien demandé. Je ne le connais même pas. Je l'ai vu quoi, 10 fois ? J'aime ma mère, j'aime mon frère, j'aime ma famille, mais lui ... Il n'en fait même pas partie. Je le déteste. Je ne l'ai jamais aimé. Est-ce que c'est de ma faute si mon père est un meurtrier ? Hein ?" Vous ne comprenez pas. Ça a l'air vraiment grave, ce qui lui est arrivé. Il semble qu'elle attende une réponse. Il va falloir faire attention à vos mots.
+Doucement, vous dites : "C'est bon, c'est bon, calme toi ... C'est pas grave ..."
+130
+Les gens autour vous regardent un peu étrangement. Vous lui demandez : "On va dehors ?" Vous en profiterez pour lui proposer autre chose à faire, et changer ses idées
+125
+Vous pensez qu'il faut changer de sujet de conversation
+156
+2 
+Tout à coup, Julia, car vous vous souvenez maintenant de son prénom, crie. Elle a l'air très énervée, cela contraste avec son beau visage. Mais surtout, étonnement, cela vous attriste. Et vous avez peur. Parce qu'elle vous crie dessus : "Comment tu peux dire ça ?" Vous ne comprenez pas ce que vous avez dit de mal, vous balbutiez. Et puis tout à coup, comme si elle se cassait, elle se met à pleurer. Ses sanglots résonnent, alors que vous ne savez comment réagir.
+Intimidé, vous balbutiez que vous êtes désolé, tout en vous mettant à pleurer
+131
+Vous vous approchez d'elle, et vous la prenez dans vos bras, sans rien dire
+132
+1 
+Petit à petit, les larmes brouillent vos yeux. Vos pleurs se mêlent aux siens, leurs bruits ne font plus qu'un. Quand, au bout de plusieurs longues minutes, vous vous calmez, vous vous rendez compte, à l'oreille, qu'elle a arrêté de pleurer. Alors, en ouvrant les yeux, vous remarquez qu'elle a disparu. Pire que ça, vous êtes maintenant devant une porte, entrouverte. Derrière, quelqu'un semble crier quelque chose.
+Étrangement, vous êtes attiré par cette dernière. Vous l'ouvrez, et la passez
+22
+1 
+Vos corps sont collés, le sien tremble, mais il sent bon. Petit à petit, il vous semble qu'elle se calme., que son corps vibre moins Au bout de quelques minutes, elle ne pleure plus. Vous desserrez votre étreinte. Alors, vous retirez vos bras. Vous vous rendez compte que ses deux beaux yeux, émeraudes, vous fixent. Elle murmure : "Désolé ... J'aurai voulu t'aimer ..." Et puis tout à coup, elle vous prend dans ses bras. Sans savoir pourquoi, vous tombez alors dans un sommeil profond, apaisé."
+Vous finissez par vous réveiller, au bout d'un temps indéterminé
+1
+2 
+Elle hausse un sourcil, l'air un peu décontenancée. "Oui ? Et donc ?" Vous gardez le silence, et haussez les épaules, doucement. "Bon, plus tard, je suppose. Pourquoi t'as fait ça, tout à l'heure ?" Encore une fois, vous ne savez vraiment pas de quoi elle parle.
+Encore une fois, vous souriez sans rien dire, calmement
+134
+Vous répondez : "Ça me paraissait nécessaire ..."
+139
+2 
+Elle vous fixe un moment sans comprendre, puis elle éclate de rire. Après quelques secondes, entre ses larmes nerveuses, elle déclare : "Tu as raison, je suis désolé, il faut que je me calme, tu n'as rien fait. Avec tout ça, je suis sur les nerfs. Tu sais, j'en peux plus, ils me veulent vraiment du mal, j'ai l'impression. Pourquoi me parler comme ça, de ça ? Je ne leur ai rien fait !"
+Vous acquiescez, en souriant, pour qu'elle continue
+129
+Vous lui répondez gentiment : "C'est bon, ça va aller"
+135
+2 
+Elle hoche la tête, un air étrange sur le visage. Tout à coup, elle lâche : "Je reviens, je vais aux toilettes." Vous hochez la tête, en la regardant partir. Au bout de quelques minutes, vous ne la voyez pas revenir, et l'attente commence à être longue.
+Vous attendez encore
+136
+Tant pis, vous allez voir dans les toilettes des filles
+137
+1 
+Alors, vous attendez. Vous ne savez pas combien de temps. Le temps vous semble long, très long terriblement long. Vous vous sentez lourd, très lourd, terriblement lourd. Vous finissez par vous endormir. Vous faites un rêve. La jeune fille est devant vous. Elle vous fixe en souriant. et tout à coup, elle bascule en arrière. Et sous elle, le sol disparaît. Elle tombe, elle tombe encore. Vous l'entendez crier, puis enfin, plus rien. Quelques secondes plus tard, vous vous sentez tomber dans le vide, et vos paupières tombent sur vos yeux.
+Au bout de quelques minutes, vous sentez avoir touché le sol. Enfin, vous semblez pouvoir ouvrir les yeux
+1
+2 
+Quand vous entrez dans les toilettes, il n'y a qu'une seule personne. Elle est agenouillée aux lavabos, et elle pleure. C'est elle. La jeune fille. Julia. Vous vous souvenez soudain de son nom. Elle ne semble pas vous avoir vu. Il est encore temps de l'attendre dehors. Néanmoins, elle semble souffrir, tellement, tellement.
+Tant pis, elle a besoin d'être seule. Vous l'attendez dehors
+136
+Prenant votre courage à deux mains, vous avancez, et vous vous glissez derrière elle, pour ensuite l'enlacer doucement
+138
+1 
+Elle sursaute, assez violemment. Finalement, elle continue simplement à pleurer. Son corps tremble, mais il est chaud et il sent bon. Elle ne dit rien, vous non plus. Un moment, elle se retourne, pour vous regarder, à travers le rideau de larme qui pave ses yeux. Petit à petit, il vous semble que ses larmes se tarissent. Même, elles se transforment. Elles deviennent colorées, colorent les sons, rendent tout joyeux. Elles donnent du mouvement.
+D'un coup, le décor se transforme, et vous tentez de comprendre ce qu'il vous arrive
+155
+1 
+Elle hoche la tête. Elle sourit un peu. "Merci !" Vous vous rendez compte qu'elle est vraiment très belle. Vous souriez un peu. Elle n'a pas l'air décidée à reprendre la parole. C'est à vous de le faire, visiblement.
+Vous réfléchissez de quoi vous pouvez lui parler
+156
+2 
+Elle vous regarde un peu de travers, l'air outrée. "Alors c'est ça ? Alors, tu te fous de ma gueule ? Moi qui pensais que tu étais mieux que les autres ... Quelle merde ..." Elle baisse les yeux, l'air déçue. Vous ne comprenez pas tout, mais vous sentez bien qu'il vous faut vous rattraper.
+Vous vous excusez, prétextant que c'était pour rigoler
+142
+Vous posez votre main sur son épaule, en souriant gentiment
+141
+1 
+Elle sursaute quand vous lui touchez l'épaule, puis elle vous repousse, un peu brusquement. "Tu fais quoi ..?" Elle se lève, doucement, comme sur ses gardes, puis elle vous regarde étrangement. Elle n'a plus l'air déçue ou énervée, simplement troublée. Il vous semble qu'elle vous a fait signe de la suivre, au moins imperceptiblement.
+Vous la suivez en dehors du café, au froid d'hiver, bien décidé à rattraper vos bourdes
+125
+2 
+"Ça me fait pas rire, tu sais ... Allez, crache le morceau. Tu voulais me dire quoi ?" Encore une fois, vous n'en avez aucune idée.
+Vous haussez les épaules, l'air confiant, prêt à lui tenir tête
+143
+Vous ne savez pas quoi dire, alors avec le plus de sérieux possible, vous tentez un coup de bluff. Après tout, ce n'est pas votre vie. Doucement, vous glissez : "Je t'aime"
+134
+1 
+Elle a l'air, un instant, de s'énerver, puis, elle se brise. Elle fond en sanglots, elle pleure, pleure, pleure encore. Vous voulez bouger, vous excuser, mais vous ne pouvez pas. Petit à petit, vous vous mettez à pleurer. Tout se brouille. Tout devient noir. Vous vous évanouissez.
+Plus tard, vous parvenez à ouvrir les yeux
+1
+2 
+Étonnement, elle accepte votre proposition. Elle hoche la tête, et vous demande : "On va où ?" En réalité, vous n'en savez rien. Vous ne connaissez même pas la ville. En faisant mine de réfléchir, vous repérez au loin un fleuve. De l'autre côté, un parc. Voilà deux idées correctes.
+Vous proposez le parc
+147
+Vous proposez d'aller au bord du fleuve
+145
+2 
+Elle acquiesce. Décidément, elle a l'air bien plus docile que plus tôt. Vous marchez, avec elle. Vous ne dites rien, elle non plus. Un instant, vous tournez la tête vers elle. Elle sourit, il vous semble. Dans le froid de l'hiver, cela vous réchauffe le cœur. Quand vous arrivez, vous ne trouvez pas d'endroit où vous poser. Vous regardez autour de vous, immobile. Mais tout à coup, vous la sentez agitée. Elle court, elle court, et elle saute, gracieusement, presque volante ... dans le fleuve glacé. Vous êtes d'abord tétanisé, mais vous sentez devoir agir.
+Vous la suivez, et sautez dans le lac, malgré la peur que cela vous inspire
+146
+Vous vous approchez du bord, pour attendre qu'elle remonte, et l'aider à ressortir, la réchauffer
+136
+1 
+Alors que vous sautez, et que vous serrez les dents, de peur du froid, le fleuve se transforme. Petit à petit, un typhon se forme, et c'est comme si il vous aspirait à toute vitesse. Mais vous ne ressentez pas le froid de l'eau. Non, vous avez même l'impression d'être dans un tuyau. Et vous vous cognez, en tourbillonnant, à ce tuyau.
+Vous vous évanouissez
+162
+1 
+Elle acquiesce. Décidément, elle a l'air bien plus docile que plus tôt. Vous marchez, avec elle. Vous ne dites rien, elle non plus. Un instant, vous tournez la tête vers elle. Elle sourit, il vous semble. Dans le froid de l'hiver, cela vous réchauffe le cœur. Une fois arrivés, sans même vous concerter, vous vous asseyez sur un banc. Maintenant, il vous faut trouver quelque chose à dire. Le silence finira par être pesant.
+Vous la regardez, cherchant que dire
+156
+2 
+Elle accepte, en souriant. Ça a l'air de lui faire vraiment plaisir. Tant mieux. Vous vérifiez quand même que vous avez de l'argent. Dans une de vos poches, vous trouvez du liquide. Alors c'est bon. Vous marchez vers le cinéma, et pénétrez le hall. La chaleur du lieu vous fait du bien. Il vous faut maintenant choisir un film. Vous vous arrêtez entre deux affiches.
+Vous choisissez un film d'horreur
+150
+Vous choisissez un film de fantasy
+149
+1 
+Elle sourit, et acquiesce. Ça a l'air de lui plaire. Vous payez, et vous allez vous installer sur les sièges. Rapidement, le film commence. L'histoire est assez basique, mais petit à petit, vous êtes pris dans le film. Tant et si bien ... que vous vous retrouvez dans le film. En moins de temps qu'il n'en faut pour le penser, vous êtes le protagoniste. Devant vous, une barre de chargement verte se remplit rapidement.
+Vous ne comprenez pas, mais pour autant, vous n'avez pas le choix que d'attendre
+38
+1 
+Elle hausse un sourcil, comme étonnée, mais vous sourit et dit : "Ok, mais si j'ai peur j'aurais besoin de toi." Vous ne savez pas trop comment réagir, vous souriez. Vous payez, et vous allez vous installer sur les sièges. Rapidement, le film commence. Cela commence gentiment, et ce n'est pas trop effrayant. Vous êtes assez fan de ce genre de films, et celui-là, vous le savez, n'est pas trop réussi. Soudain, vous entendez un bruit étrange, aigu à vos côtés.
+Vous tournez la tête, étonné
+151
+1 
+Alors que vous vous concentrez pour voir dans le noir, vous vous rendez compte que Julia, car vous savez maintenant son prénom, mystérieusement, pleure. Elle a l'air effrayée. Mais pas tellement. Surtout, elle a l'air triste, comme si les scènes du film faisaient écho à des scènes de sa vie. Alors, comme par instinct, vous posez une main sur son épaule. Elle tremble. Elle sursaute. Elle vous fixe, à travers ses beaux yeux embrumés. Tout à coup, elle se jette à votre coup, vous enlaçant, pleurant de plus belle.
+Vous attendez qu'elle se calme, caressant doucement son dos
+132
+1 
+Elle vous fait un grand sourire, et hoche vivement la tête. Vous ne comprenez pas bien pourquoi elle est si heureuse, mais cela vous fait chaud au cœur. Alors que vous marchez vers la patinoire, elle se balance, de gauche à droite. Elle a l'air d'avoir hâte. Rapidement, vous enfilez des patins, et vous allez virevolter sur la glace. Ça fait longtemps que vous n'avez pas patiné, vous avez du mal. Mais au loin, entre les enfants, vous l'apercevez. Elle danse. Elle vole. Elle est si habile. Et puis elle sourit. Elle s'appelle Julia. Vous vous en souvenez. C'est comme si elle ne faisait qu'un avec la glace. Elle est magnifique.
+Subjugué par ce spectacle, vous la fixez, une heure durant, ne voyant pas le temps passer
+153
+2 
+Finalement, c'est elle qui vient vous voir, glissant doucement pour s'arrêter à vos côtés. Un peu épuisée, essoufflée, elle vous demande : "Tu fais rien ? Ça te plait pas ? Viens avec moi, tu vas voir c'est cool !" Elle sourit, un sourire magnifique, un sourire que, vous le savez, sans savoir comment, vous n'avez jamais vu sur son visage. Vous êtes heureux, mais vous ne savez pas si vous avez envie de la déranger dans son bonheur.
+Vous déclinez gentiment
+154
+Vous acceptez, espérant ne pas trop faire de bourde
+155
+1 
+Elle incline la tête, l'air déçue. "Ah ? Ok. Tant pis !" Elle vous sourit et lâche : "Merci, d'ailleurs. Ça va mieux, grâce à toi !" Vous haussez les épaules, mais ne dites rien. Petit à petit, le silence devient pesant, et elle vous fixe toujours, sans bouger.
+Il vous faut trouver quelque chose à dire
+156
+1 
+Devant vous, Julia danse, danseuse étoile, danseuse polaire. Elle est magnifique. Elle est heureuse, elle sourit, d'un sourire que le soleil envierai. Vos corps sont collés, son cœur bat contre le votre, sa douceur vous enveloppe. Son odeur, emportée et transportée par le vent, vous caresse les narines. Alors, vous pleurez. Vous êtes si heureux, sans savoir pourquoi. Vous pleurez, et à travers votre cascade de larmes, vous voyez deux yeux verts qui vous fixent, avec chaleur. C'est les siens, sublime. Dans ses yeux, un paysage apparaît.
+Vous essuyez vos yeux, pour faire le point
+2
+2 
+Vous vous creusez alors la tête, en quête d'un sujet de conversation. Vous avez l'air d'être au même lycée, peut-être faudrait-il vous orienter là-dessus. Ou la faire parler d'elle. Elle semble très attentive à ce que vous allez dire, elle vous fixe. Il va falloir faire attention à vos mots. Vous respirez un grand coup avant de parler.
+"Comment va ta famille ?"
+130
+"Ça se passe comment, les cours ?"
+157
+2 
+Elle répond, gênée : "Boh, tu sais bien ... Enfin, quoi ... Je fais de mon mieux ..."
+"Hm. Tu fais quoi, en dehors des cours ?"
+158
+"Ça va. Tu t'en sors très bien !"
+130
+2 
+En souriant, elle dit : "Justement ... Je vais à la patinoire. J'aime trop, le vent me libère de mes pensées sombre."
+"Il faut bien avoir quelque chose pour les expulser ..."
+130
+"Tu danses très bien, Julia ..."
+159
+2 
+Elle rougit un peu. "C'est gentil ... T'es pas comme les autres, tu sais ..."
+"Ils n'ont pas vraiment mauvais fond, tu sais ..."
+130
+"C'est sûrement vrai ..."
+160
+2 
+Elle incline la tête sur le côté, et timidement, elle demande : "Tu m'aimes bien ?"
+"Oui, je t'aime, Julia."
+161
+"Tout le monde t'aime, Julia !"
+130
+1 
+Elle sourit, et rougit encore un peu plus. "Moi aussi." Tout à coup, elle se penche vers vous, et tombe dans vos bras. Elle sourit, elle vous regarde, et vous plongez dans son sourire, dans ses yeux verts, son parfum, sa beauté, sa douceur, vous vous perdez. Et quand enfin vous rouvrez les yeux, son parfum est toujours là. Mais plus elle. Ou peut-être que si, au loin, il vous semble.
+Vous découvrez le paysage qui vous fait face
+2
+2 
+Brusquement, vous êtes jeté dans une sorte de pièce éblouissante, alors que vous reprenez connaissance, sans pour autant que vous vous souveniez de l'avoir perdue à un moment ou un autre. Avant même que vous ne tentiez d'ouvrir les yeux, des bruits stridents se font entendre. BIP-BIP-BIP. Comme si.. vous étiez dans un engin prêt au décollage. Et voilà soudain que vos pieds se décollent du sol. Vous criez, mais il n'y a personne, vous êtes seuls dans une salle ronde totalement blanche.
+Vous tentez de nager dans l'air pour atteindre la porte à l'autre bout
+169
+Vous fermez les yeux et faites le vide dans votre esprit
+163
+3 
+Vous restez donc immobile, à flotter dans cette immense pièce blanche. Vos pensées tourbillonnent dans votre esprit, et vous commencez à paniquer de plus en plus... Une voix féminine vous interrompt brusquement. "Spationaute, vous êtes attendu.e dans la cabine du commandant." Que faites vous ?
+Rester immobile malgré tout
+164
+Tenter de parler avec la femme
+167
+Obéir et essayer de trouver la cabine en question
+169
+3 
+Après quelques instants de silence, constatant votre immobilité, la voix reprend, d'un ton impétueux. "Spationaute ! Le commandant M vous attend immédiatement dans sa cabine !"
+Essayer de parler avec la voix
+167
+Sortir d'ici pour trouver la cabine
+169
+Rester toujours immobile
+165
+2 
+La voix soupire, l'agacement se laissant entendre. "Bien, vous refusez de bouger. Je suppose que je n'ai pas le choix." Une pince sort du plafond et vous attrape brutalement. Elle vous fait monter dans le plafond et vous parcourez plusieurs mètres avant qu'elle ne s'arrête. Elle vous lâche et vous vous retrouvez dans une nouvelle salle. La gravité est cependant bien présente ici, et vous tombez brutalement. En vous relevant, vous vous trouvez nez à nez avec un homme en uniforme à l'air sévère. Il vous domine d'au moins une vingtaine de centimètres et semble peu commode. "C'est donc vous l'astronaute ?"
+Acquiescer poliment
+176
+Répondre d'un ton hautain : "Ah et c'est donc ça le commandant M ..."
+166
+2 
+Le visage de l'homme se contracte, il semble ne pas apprécier votre réaction. "En effet. Je vous conseille donc de vous adresser à vos supérieurs d'une façon plus correcte. Enfin, nous avons une mission pour vous, que vous pouvez accepter ou refuser."
+"Dites m'en plus ..."
+177
+"Pas intéressé.e, je ne sais même pas pourquoi je suis là."
+175
+3 
+"Q-qui êtes-vous ? Où suis-je ?" Ces paroles, simple manifestation de votre angoisse, sortirent de votre bouche sans que vous ayez pu réfléchir à ce que vous vouliez dire. À votre grande surprise, la voix répond. "Je suis Démos, votre copilote. Vous êtes dans la fusée Cassiopé-NDFFB8, en direction de la planète 59 Virginis. Veuillez maintenant gagner la cabine du commandant M, astronaute."
+Poser plus de questions sur votre situation
+168
+Sortir de la salle
+169
+Rester immobile en silence
+165
+2 
+"Qu'est-ce que je fais ici ? Qui est ce commandant M ?" Encore une fois, impossible pour vous de contrôler ce que vous dites. Les questions défilent et s'emmêlent dans votre esprit, tout est confus. Démos prend cette fois un moment à répondre." Vous êtes ici car c'est votre rôle. Le commandant M est le chef de cette fusée. Veuillez maintenant gagner sa cabine. Il s'impatiente de plus en plus."
+Gagner la cabine
+169
+Rester immobile
+165
+2 
+Vous parvenez avec difficulté jusqu'à l'unique porte de la pièce. Vous n'avez pas besoin de l'ouvrir, elle est déjà légèrement entrouverte. Vous la poussez pour pouvoir sortir et elle émet un grincement inquiétant. Devant vous se trouve deux possibilités.
+Prendre le couloir de droite
+170
+Prendre le couloir de gauche
+173
+2 
+Vous tournez donc à droite. Vous avancez avec difficulté, vous propulsant en appuyant contre les parois. Vous pouvez entendre des moteurs tourner, mais il s'agit à peu près du seul bruit ambiant. À la fin du couloir, la porte est barrée. Une petite pancarte est collée dessus. "Aile en rénovation, merci de ne pas entrer."
+Rebrousser chemin
+172
+Essayer d'entrer dans l'aile en question
+171
+1 
+Vous poussez donc cette porte, qui s'ouvre sans difficulté à votre plus grande surprise. Vous faites quelques mètres, vous commencez à vous habituer à ce système de déplacement. Un bruit sourd résonne alors que la porte se rabat. Vous continuez votre chemin, suivant la direction d'un étrange sifflement. Vous franchissez une ouverture et vous retrouvez avec horreur face au vide béant. Vous êtes aspiré.e par l'espace et vous éloignez rapidement de l'endroit où vous étiez précédemment, qui s'avère être une station spatiale. Quelques instants plus tard, vous expirez pour la dernière fois.
+Étrangement, vous finissez par reprendre connaissance
+1
+1 
+Vous retournez donc en arrière, jetant un regard perplexe à cette pancarte. Vous pouvez maintenant prendre l'autre couloir.
+Prendre l'autre couloir
+173
+2 
+Vous prenez donc le couloir de gauche. Les éclairages vous aveuglent tandis que vous progressez de plus en plus aisément. Les murs autour de vous sont blancs, et le seul bruit que vous pouvez entendre est un léger ronronnement de moteur, qui sait d'où il vient. Vous parvenez enfin à la porte au fond du couloir. "Cabine Commandant M. N201" est inscrit sur la porte, en lettres dorées. Vous pouvez désormais entendre des bribes de conversation.
+Toquer à la porte
+174
+Rebrousser chemin et prendre le couloir de droite
+170
+2 
+Vous toquez timidement à la porte. Après quelques secondes de battement, une voix sèche vous dit d'entrer. Vous poussez la porte avec plus ou moins de difficultés, et entrez dans la pièce se trouvant derrière. Brusquement, la gravité est rétablie et vous tombez sur le sol dans un grand fracas. "Vous voilà enfin astronaute, j'ai failli attendre." Vous levez les yeux et vous retrouvez face à face avec un homme en uniforme. Vous le dévisagez et il continue de parler. "Je suis le commandant M. Vous êtes enfin ici. Nous avons une mission pour vous, astronaute."
+"Quelle est-elle ?"
+177
+"Qu'est-ce que je fais ici ?"
+175
+1 
+"Vous êtes ici pour travailler, spationaute. Vous avez travaillé toute votre vie pour accomplir un objectif de cette taille, et vous n'êtes maintenant plus interessé ? Si vous réalisiez votre chance ... Vous n'avez plus vraiment le choix, après tous ces sacrifices ..."
+Le commandant continue son discours
+177
+2 
+L'homme sourit. "Je suis le commandant M, si vous ne l'aviez pas déjà deviné. On a besoin de vous pour une mission particulière, astronaute. Bien entendu, vous pouvez toujours refuser. Si c'est le cas, vous serez un.e simple ouvrier.ère de maintenance dans cette station."
+"Je vous écoute."
+177
+"Je ne suis pas intéressé.e, je ne sais même pas ce que je fais là."
+175
+3 
+"Nous enverrons sur 59 Virginis, une planète récemment découverte, une navette. Nous allons y expédier une équipe de scientifiques et un astronaute. Nous souhaitons que ça soit vous, en tant que vétéran de notre vaisseau. Vous resterez dehors quelques heures, pas plus, et vous n'aurez qu'à suivre les instructions de la base de contrôle." Le commandant vous scrute de haut en bas, il n'a pas l'air d'avoir beaucoup de temps à perdre.
+"J'accepte !"
+180
+"Je ne suis pas intéressé.e, désolé.e"
+179
+Poser des questions sur la planète
+178
+2 
+"Quelle est cette planète, 59 Virginis ?" Le commandant vous fixe d'un air surpris. Il finit cependant par répondre. "Eh bien, il s'agit de la première planète présentant une atmosphère et un cadre de vie similaire à la nôtre. Nous sommes d'ailleurs la première expédition envoyée là bas."
+"Très bien, j'accepte la mission"
+180
+"Désolé.e, vous allez devoir trouver quelqu'un d'autre."
+179
+1 
+Le visage du commandant se ferme. "Bien, vous avez la liberté de refuser. Vous pouvez disposer." Vous vous retournez et sortez de la pièce quand l'univers change totalement autour de vous.
+Vous tentez de comprendre ce qui vous arrive
+100
+1 
+Le commandant sourit, content de lui, voire content de vous ? Vous commencez à comprendre qui vous êtes, sans bien le saisir. Vous êtes un spationaute, et vous avez fait une longue carrière pour en arriver là. Pour en arriver au stade où on vous donne une mission. Alors vous allez la remplir, même si ce n'est qu'un rêve, même si ce n'est pas votre vie. L'humanité semble en avoir besoin.
+Une semaine plus tard, vous partez
+181
+1 
+Tout s'est bien passé dans la fusée. Le voyage arrive à son terme, au bout d'un mois. Votre corps et votre esprit semblent être entrainés à ressentir les forte secousses qui remuent l'appareil spatial. Vous grappillez quelques informations sur votre mission. En fait, la planète a tout pour être habitable, hormis un soucis majeur : il est totalement impossible de faire parvenir de quelconques ondes jusqu'à la surface de la planète, à cause des roches qui la composent. Du coup, bien que tout porte à la croire habitable, de loin, aucun robot n'a jamais pu le confirmer, et c'est donc le rôle de votre expédition.
+Perdu dans vos pensées, vous en êtes tiré par un grand bruit, sourd
+182
+2 
+Alors que vous reprenez vos esprits, vous vous rendez compte que vous vous êtes endormi quelques secondes. Sûrement avez-vous cogné quelque chose, à cause des grosses secousses qui malmènent l'appareil. Autour de vous, vos camarades s'animent. Vous ne comprenez pas ce qu'il se passe.
+Vous demandez des informations à l'un d'entre eux
+183
+Vous courez vers la source du bruit, comme eux
+187
+2 
+Il vous répond, pressé : "On était à quelques centaines de mètres de la surface, mais on est maintenant bloqués. Personne ne sait pourquoi, on va voir les caméras." Il part immédiatement en courant. Vous ne savez pas trop quoi faire.
+Vous le suivez
+187
+Vous entendez au loin un sifflement étrange, vous préférez aller voir
+184
+2 
+Le sifflement, que vous semblez être le seul à entendre, vous amène dans une salle des machines, déserte. Devant, un écran rouge affichant un pictogramme de danger clignote, avec un bruit strident. Et à votre gauche, une porte, derrière laquelle vous voyez la même lueur rouge.
+Vous allez examiner l'écran
+185
+Vous allez vers la porte
+186
+1 
+Quand vous posez votre doigt sur l'écran, qui paraît tactile, il affiche tout à fait autre chose. Devant vous, que du noir, sauf une barre de chargement, qui se remplit, d'un vert pomme, petit à petit. Vous tentez de bouger, mais vous ne pouvez pas. Même, vous avez l'impression d'être enlevé de la réalité.
+Vous attendez, n'ayant pas d'autre choix
+38
+1 
+Alors même que vous passez la porte, elle se referme derrière vous, dans un claquement. Mais cependant, la lumière, à l'image du bruit, deviennent immediatement plus supportables. Alors, un message apparait devant vous : "Attachez-vous." Vous ne comprenez pas bien, puis finissez par repérer un siège, doté d'un harnais. Vous executez l'ordre, et tout à coup, vous vous sentez en apesanteur. Vous ne pouvez pas bouger, mais vous sentez que votre capsule se déplace. Au bout de quelques longues minutes, vous touchez violemment le sol, et la porte s'ouvre.
+Vous sortez, peu confiant en la situation
+200
+2 
+Vous vous dirigez vers les caméras. Là-bas, tout l'équipage est agglutiné. Mais en fait, les caméras sont détruites. Aucun moyen de voir ce qu'il se passe dehors. Vous réfléchissez.
+Vous préférez rester ici et cotiger à plusieurs
+188
+Vous décidez, perdu pour perdu, de sortir de l'appareil par la porte principale
+189
+1 
+Au bout de quelques minutes, personne n'a encore trouvé de solution. Mais tout à coup, votre cabine se met à rétrécir, rapidement. Affolé, toute la foule se dirige vers la sortie. Vous n'arrivez pas à vous frayer un chemin. C'est le chaos, et au bout de quelques minutes de souffrance, vous finissez broyé entre les murs.
+Étrangement, vous finissez par vous réveiller
+1
+1 
+Vous arrivez en face de la porte. Elle est en fait déjà ouverte. Dehors, loin en bas, la planète. Et devant, du vide. Mais surtout, des branches. Partout autour de vous, des branches rentrent dans le vaisseau, et c'est elles qui semblent le bloquer dans les airs. Vous vous sentez en danger, mais vous n'avez pas le choix. Il vous faut descendre par l'arbre gigantesque qui maintient le vaisseau.
+Vous entreprenez votre périlleuse descente
+190
+2 
+Étrangement, vous y arrivez plutôt bien. Vous avez vraiment un corps très résistant. Un moment cependant, la branche se divise en deux. Vous arrivez à distinguer le sol. D'un côté, elle tend vers une sorte d'étendue d'eau. De l'autre, elle plonge dans une forêt dense.
+Vous prenez vers la forêt
+198
+Vous prenez vers le lac
+191
+2 
+Un lac se dessine entre les arbres. L'eau est si claire par instant que le fond est visible depuis le rivage, mais il lui arrive de se voiler en un drap de blanc en réflétant la lumière. Intrigué, vous vous rapprochez du bord. L'eau est tiède, parfaite pour s'y baigner.
+Vous préférez continuer d'observer le fond par crainte de ce qu'il peut s'y trouver
+192
+Vous plongez dans le lac, plus sûr que la forêt
+193
+1 
+Vous continuez de marcher au bord du lac, à la lisière de la forêt. Vous ne comprenez pas le phénomène se produisant à sa surface. Les ondulations de l'eau vous paraissent suspectes, alors vous les gardez à l'oeil. Comme pour confirmer vos craintes, votre réflexion se déforme peu à peu. Lorsque votre visage n'a plus rien d'humain et que l'eau se teinte, vous prenez peur. Vous tentez de reculer, mais vous êtes coincés devant votre reflet.
+Vous vous retrouvez pris au piège dans un miroir, puis il vous ejecte hors de lui
+74
+1 
+Une fois sous l'eau, vous vous rendez compte que vous n'avez pas besoin de respirer. La nature est étrange en ces lieux. Vous effectuez quelques mouvements, vous êtes propulsés sur plusieurs mètres sans grand effort. Vous ne comprenez pas ce qui vous arrive.
+Vous continuez de nager
+194
+2 
+En vous éloignant de la berge, vous constatez l'absence de poissons. L'eau semble vide de présence alors que les algues se densifient.
+Vous rebroussez chemin et remontez à la surface
+197
+Vous restez pour comprendre ce qu'il se passe
+195
+1 
+Plus vous vous engouffrez, plus votre vision est envahie par la végétation. Bientôt les coraux deviennent si grands qu'ils forment une épaisse forêt aquatique, presque identique à celle de la surface. Les algues, plus modestes, tentent de s'accrocher à toutes les parois. Bientôt, l'une d'entre elle se s'ancre à votre mollet, vous retenant d'avancer plus loin.
+Vous tirez sur l'algue pour vous libérer
+196
+1 
+Vous tirez si fort que l'algue se cède. Vous êtes libéré, mais un vif courant vous empêche de remonter à la surface. Les algues s'agitent et dans leur bruissement vous percevez un cri. Vous êtes entraîné vers le fond alors que la végétation vous recouvre. Les lianes vous serrent et vous sentez vos os se broyer. Votre vision se floute. Vous pensez mourir alors que le noir vous engloutit.
+Vous rouvrez les yeux, assomé
+1
+1 
+Vous rejoignez aussi vite que possible la berge, inquiet au sujet du lac. Devant vous se tient la forêt, immense et dense comme à la sortie du vaisseau. Cela ne vous enchante guère mais vous n'avez pas le choix.
+Vous pénétrez dans la forêt
+200
+2 
+Alors que vous arrivez au niveau de la canopée, vous hésitez. Les feuilles sont si denses que vous pouvez marcher dessus.
+Vous choississez de marcher au-dessus des arbres
+199
+Vous préferez vous protéger du soleil en descendant dans cette jungle
+200
+1 
+Tout se passe d'abord bien, mais tout à coup, vous tombez dans les feuilles d'un arbre. Vous chutez quelques secondes, avant d'atterir mollement. Vous êtes coincé, au milieu de feuilles. Vous êtes dans le feuillage, qui est certe agréable, mais inextricable. Ceci dit, cela sent bon. Tellement bon ... C'est tellement agréable ...
+Vous finissez par vous endormir de bien-être
+8
+2 
+Vous arrivez au milieu d'une véritable jungle. Partout, les plantes s'entremêlent. Mais pour autant, il ne semble pas y avoir de faune. De plus, depuis les quelques minutes depuis lesquelles vous êtes ici, il vous semble que le volume sonore a considérablement baissé. Cela vous effraie un peu, vous ne savez trop quoi faire.
+Vous vous allongez sur le sol, pour vous reposer
+202
+Vous avancez dans la jungle, pour trouver un endroit à l'abri
+201
+1 
+Vous avancez, ainsi. Mais quelques minutes plus tard, vous êtes toujours au même endroit. Vous ne comprenez pas. Vous continuez à avancer, comme poussé par un désir invincible. Vous avancez, avancez, jusqu'à plus de force. A ce moment là, vous vous effondrez sur le sol. Pendant que vous perdez connaissance, il vous semble que tout bouge, autour de vous. Tout se transforme, comme si les végétaux imposaient leur volonté.
+Vous finissez par vous réveiller
+1
+1 
+Alors que vous êtes allongé, que vous luttez pour ne pas dormir, il vous semble entendre quelque chose. En vous concentrant, vous vous rendez compte qu'une voix vous parle, dans une langue inconnue. Pourtant, vous comprenez. Cela semble venir du sol. Elle dit : "Lève-toi. Tu es bon, toi, au moins."
+Vous obéissez, sans réfléchir, vous avez trop peur de toutes ces choses étranges
+203
+2 
+Quand vous êtes debout, vous remarquez quelque chose d'étrange, devant vous. Une maison, faite de bois étrange, et de feuilles toutes aussi bizarres. Vous hésitez à entrer. Finalement, une branche vous pousse à l'intérieur. A l'intérieur, des mets, sur une table. De l'autre côté, des rangements.
+Vous allez inspecter les rangements
+205
+Vous allez manger, vous êtes affamé
+204
+1 
+Alors que vous croquez dans le premier fruit que vous trouvez, vous ressentez foule de sensation. Le fruit est juteux, sucré, un peu acide. Il est magique, en un mot. Vous fermez les yeux pour en profiter, vous enfoncez dans le canapé. Mais soudain, l'odeur autour de vous change, à l'image de la température.
+Vous rouvrez les yeux
+120
+2 
+En ouvrant un tiroir, vous trouvez deux objets : un téléphone portable, et un téléphone portable ... en bois. L'un semble quand même plus utile, mais vous hésitez : cela semble être un test !
+Vous prenez le téléphone en bois
+208
+Vous prenez le vrai téléphone
+206
+2 
+Vous l'attrapez, mais, comme vous auriez pu vous en douter, il n'y a aucun réseau. C'est vrai que rien ne marche, ici. Alors, vous entendez, à nouveau, la même voix, celle de la Nature, et comprenant sans comprendre ce qu'elle vous veut, vous entendez : "Réponds sincèrement. Vous, les humains, que voulez-vous ?"
+"Nous voulons les ressources de cette planète."
+209
+"Simplement s'installer, sans rien déranger."
+207
+1 
+La voix murmure : "Tu as menti ..." Immédiatement, vous vous sentez comme disparaître. Vous perdez conscience de tout, et sombrez dans un état étrange.
+Vous tentez de reprendre conscience, de vous lever, dans cet espace difforme
+1
+1 
+Comme un enfant, vous collez le téléphone à votre oreille. La voix de toute à l'heure se fait à nouveau entendre, la voix de la Nature, grave et sereine, splendide. "Je t'aime bien." Elle laisse un silence, comme réfléchissant.
+Vous attendez, apeuré
+209
+2 
+"Tu es sincère. C'est bien. Mais que peux-tu faire pour moi ?"
+Vous ne dites rien
+210
+"Je peux empêcher les humains de venir."
+207
+2 
+"Oui, en effet. Tu n'y as pas réfléchi. Mais tu peux empêcher une guerre, si tu te sacrifie. De toute façon, tes camarades l'ont déjà fait."
+"Oui. Peut-être."
+211
+"Non, ne me tuez pas. Ma famille m'attends sur Terre !"
+207
+1 
+"Ainsi, le pacte est signé. J'ai confiance en toi. Ne me déçois pas." Vous sortez de votre état second, sans bien tout comprendre. Il semble qu'en fait, cette Nature n'attende rien de plus que vous que revenir vivant sur Terre. Pour témoigner de la force de la planète. Alors que vous regardez en dehors de la maison, vous voyez justement, devant vous, un vaisseau spatial, d'une couleur inconnue, mais à l'air futuriste. Ici, la Nature s'est bien plus développée. Forcément, sans humains ...
+Vous montez dans la navette, poussé par votre instinct
+212
+1 
+Au bout d'un mois, vous êtes épuisé, mais surtout sur Terre. Tout le monde vous acclame. Vous êtes le seul rescapé. Mais surtout, partout, à la télé, vous le répetez. La Nature est effrayante, il faut la respecter, il faut cohabiter. Les écolos en font leur message, les gouvernement plient. 6 mois plus tard, la première expédition est un succès. Grâce à vous. Vous voyez ça à la télé. Mais tout à coup, l'écran se trouble. Vous haussez les sourcils, étonné.
+L'image revient, mais elle est différente. C'est un tableau
+2

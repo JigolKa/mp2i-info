@@ -71,12 +71,12 @@ int **prod_mat(int **g1, int **g2, int n1, int m1, int n2, int m2)
     return prod;
 }
 
-int di[4] = {0, 0, 1, -1};
-int dj[4] = {1, -1, 0, 0};
+int di[4] = {0, 0, 1, -1, 1, -1, 1, -1};
+int dj[4] = {1, -1, 0, 0, 1, -1, -1, 1};
 float moy_aux(int **g, int n, int m, int i, int j)
 {
     int sum = g[i][j], c = 1;
-    for (int k = 0; k < 4; k++)
+    for (int k = 0; k < 8; k++)
     {
         int ni = i + di[k], nj = j + dj[k];
         if (0 <= ni && ni < n && 0 <= nj && nj & m)

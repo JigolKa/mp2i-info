@@ -9,4 +9,5 @@ int main(int argc, char **argv)
     char word;
     while ((fscanf(in, "%c", &word)) == 1)
         fprintf(out, "%c", word);
+    fclose(in), fclose(out);
 }

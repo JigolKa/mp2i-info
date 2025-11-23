@@ -24,3 +24,5 @@ sinon, on ne pourra pas afficher le mot le plus long
 
 Ensuite, il faut pouvoir fusionner les matrices de caractères pour chaque ligne
 Enfin, on affiche ligne par ligne la matrice fusionnée correspondante
+
+Question pour l'ex 12, pourquoi est-ce que le free(cur) à la ligne 167 cause une erreur de segmentation?

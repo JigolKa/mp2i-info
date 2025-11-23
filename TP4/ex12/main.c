@@ -30,9 +30,15 @@ char *open(char c)
     return res;
 }
 
+/**
+ * Récupère le symbole associé à c (matrice 2D)
+ */
 char **get_mat(char c)
 {
-    FILE *f = fopen(open(c), "r");
+    char *filename = open(c);
+    FILE *f = fopen(filename, "r");
+    if (c != ' ')
+        free(filename);
     char **mat = malloc(sizeof(char *) * 8);
     for (int i = 0; i < 8; i++)
         mat[i] = malloc(sizeof(char) * 9);
@@ -50,6 +56,7 @@ char **get_mat(char c)
         mat[i][8] = '\0';
         // printf("%s\n", mat[i]);
     }
+    fclose(f);
     return mat;
 }
 
@@ -57,8 +64,9 @@ char **get_mat(char c)
  * Fusionne les matrices
  * n: nombre de matrices (mots)
  */
-char **merge_mats(char ***matrices, int n)
+char **merge_mats(char ***matrices)
 {
+    int n = CHARACTER_COUNT;
     char **res = malloc(sizeof(char *) * 8);
     for (int i = 0; i < 8; i++)
         res[i] = malloc(sizeof(char) * (8 * n + 1));
@@ -81,9 +89,14 @@ void print_mat(char **mat)
         printf("%s\n", mat[i]);
 }
 
-char ***convert_sentence(char *sentence, int n)
+/**
+ * Convertit une phrase en liste de ses symboles (liste de matrices 2D)
+ */
+char ***convert_sentence(char *sentence)
 {
+    int n = CHARACTER_COUNT;
     char ***matrices = malloc(sizeof(char **) * n);
+    // alloue la mémoire
     for (int i = 0; i < 8; i++)
     {
         matrices[i] = malloc(sizeof(char *) * 8);
@@ -151,19 +164,27 @@ char **split_sentence(char *s, int *number_of_lines)
     *number_of_lines = res_size;
     printf("cur (end)=%s, cur_idx=%d\n", cur, cur_idx);
     printf("res_idx=%d,res_size=%d\n", res_idx, res_size);
-
+    // free(cur);
     return res;
 }
-
+const int MAXSIZE = 1024;
 int main(int argc, char **argv)
 {
     assert(argc == 3);
     FILL_CHARACTER = argv[1][0], CHARACTER_COUNT = atoi(argv[2]);
 
     char *s = "MP9 Tous des Oeufs";
-    // printf("Rentrez la phrase à afficher: ");
-    // scanf("%s", s);
     int n = strlen(s);
+
+    /**
+     * vérifie (1)
+     * si (1) n'est pas vérifié, on ne peut pas afficher le mot de longueur maximale
+     * car l'algorithme garde les mots en entier (il ne les sectionne pas à la fin de chaque ligne)
+     *
+     * ex:
+     * Bonj
+     * our
+     */
     int cur = 0, maxi = -1;
     for (int i = 0; i < n; i++)
     {
@@ -172,21 +193,30 @@ int main(int argc, char **argv)
         else
             cur++;
     }
-
     assert(CHARACTER_COUNT >= maxi); // (1)
 
     int number_of_lines = 0;
     char **parts = split_sentence(s, &number_of_lines);
-    int *sizes = malloc(sizeof(int) * number_of_lines);
-    for (int i = 0; i < number_of_lines; i++)
-        sizes[i] = CHARACTER_COUNT;
-    printf("number_of_lines=%d\n", number_of_lines);
+
+    // printf("number_of_lines=%d\n", number_of_lines);
 
     for (int i = 0; i < number_of_lines; i++)
     {
-        char ***sentence_in_blocks = convert_sentence(parts[i], sizes[i]);
-        print_mat(merge_mats(sentence_in_blocks, sizes[i]));
+        char ***sentence_in_blocks = convert_sentence(parts[i]);
+        print_mat(merge_mats(sentence_in_blocks));
+
+        for (int i = 0; i < 8; i++)
+        {
+            for (int j = 0; j < 8; j++)
+                free(sentence_in_blocks[i][j]);
+            free(sentence_in_blocks[i]);
+        }
+        free(sentence_in_blocks);
     }
+
+    for (int i = 0; i < number_of_lines; i++)
+        free(parts[i]);
+    free(parts);
 
     // printf("%c %d\n", FILL_CHARACTER, CHARACTER_COUNT);
 

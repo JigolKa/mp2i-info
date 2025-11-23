@@ -1,0 +1,5 @@
+ex1.
+1. 2*50*char + 2*int
+
+ex2.
+4. Erreurs d'arrondis dans les sommes. Utiliser un double?

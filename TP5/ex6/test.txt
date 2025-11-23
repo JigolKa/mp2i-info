@@ -1,0 +1,6 @@
+2
+Nous sommes vendredi matin. Demain, il y a DS d'informatique. La journée doit se dérouler sans accroc afin que vous ayez le temps de réviser ce soir, de dormir, et donc que vous puissiez obtenir une bonne note au DS. Il est 10h, le cours de physique de Mme Goutelard vient de se terminer. Que faites-vous ?
+Vous allez en cours d'informatique.
+1
+Vous n'allez pas en cours d'informatique, il fait beau et vous préférez aller vous balader sur les quais de la Garonne.
+2

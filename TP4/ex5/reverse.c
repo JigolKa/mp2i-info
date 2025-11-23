@@ -32,4 +32,5 @@ int main()
         if (fscanf(in, "%c", &ch) == 1)
             fprintf(out, "%c", ch);
     }
+    fclose(in), fclose(out);
 }

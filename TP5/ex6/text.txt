@@ -1,0 +1,70 @@
+15
+2
+Nous sommes vendredi matin. Demain, il y a DS d'informatique. La journée doit se dérouler sans accroc afin que vous ayez le temps de réviser ce soir, de dormir, et donc que vous puissiez obtenir une bonne note au DS. Il est 10h, le cours de physique de Mme Goutelard vient de se terminer. Que faites-vous ?
+Vous allez en cours d'informatique.
+1
+Vous n'allez pas en cours d'informatique, il fait beau et vous préférez aller vous balader sur les quais de la Garonne.
+2
+4
+Vous allez en cours d'informatique. Les deux heures sont longues car vous n'avez pas mangé ce matin. Vous parvenez tout de même à rester concentrer jusqu'à la fin du cours. Il est maintenant l'heure de manger, vous allez à la cantine. Quel plat choisissez-vous ?
+Steak-frite.
+3
+Saucisse-purée accompagné de carottes à l'étuvée
+4
+Poêlée de légumes
+5
+Le plat mystère
+6
+0
+Vous n'allez pas en cours d'informatique, et vous ratez des informations capitales pour réviser. Vous n'êtes pas bien préparé pour le DS. GAME OVER
+0
+Le personnel de la cantine n'a pas assez cuit la viande. Vous faîtes une intoxication alimentaire et vous restez cloué au lit tout le reste de la journée et tout le week-end: vous n'assistez pas au DS. GAME OVER
+1
+Quel régal.
+Après le repas, vous vous rendez tranquillement aux cours de l'après midi.
+7
+2
+Les légumes sont bien assaisonnés, et très frais. Alors que vous reprenez une bouchée, vous sentez un objet métallique dans votre bouche. Une clé USB semble s'être retrouvée dans votre plat !
+Vous allez la rendre aux objets trouvés, après quoi vous allez tranquillement en cours.
+7
+Pris de curiosité, vous vous rendez en salle informatique pour inspecter la clé de plus près
+10
+1
+Le plat mystère est en fait un vulgaire bol de soupe de lentilles, un peu décevant...
+Après le repas, vous vous rendez tranquillement aux cours de l'après midi.
+7
+2 
+Les cours de l'après-midi se déroulent normalement. Il est maintenant 18h. Vos amis vous proposent d'aller boire un verre de jus de pomme.
+Vous les accompagnez
+8
+Vous ne pouvez pas, il y a DS et vous devez finir de réviser et vous coucher tôt
+9
+0
+Vous vous faîtes traquenarder par vos amis et vous vous couchez à 5 heures du matin. Vous vous réveillez en retard pour le DS, et en n'ayant pas assez révisé. GAME OVER
+0
+Vous rentrez, et passez deux petites heures à réviser et refaire les exercices. Vous êtes fin prêts pour le DS !
+4
+Vous allumez votre session, branchez la clé. Dessus, un unique fichier: DS_INFO_CORRIGE.pdf !! Vous cliquez dessus pour l'ouvrir, mais une boîte de dialogue s'affiche: "Ce fichier est protégé par mot de passe. Veuillez entrer l'écriture en base 7 de 892:"
+13065
+11
+892
+12
+2413
+13
+7329
+14
+1
+Une nouvelle boîte de dialogue apparaît: "Mauvaise réponse. Auto-destruction du fichier."
+Dépité, vous allez en cours pour le reste de la journée.
+7
+1
+Une nouvelle boîte de dialogue apparaît: "Mauvaise réponse. Auto-destruction du fichier."
+Dépité, vous allez en cours pour le reste de la journée.
+7
+0
+Sous vos yeux ébahis, le DS de demain s'affiche sur l'écran de l'ordi, chaque question accompagnée de son corrigé. Vous apprenez les réponses par coeur. Vous obtenez 20 au DS, mais avez-vous vraiment gagné... ?
+1
+Une nouvelle boîte de dialogue apparaît: "Mauvaise réponse. Auto-destruction du fichier."
+Dépité, vous allez en cours pour le reste de la journée.
+7
+
