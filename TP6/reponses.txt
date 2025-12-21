@@ -1,0 +1,2 @@
+Q16. 5 échanges
+Q17. Le tri par insertion est O(n^2), donc K^2 * n/K = Kn

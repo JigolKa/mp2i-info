@@ -2,20 +2,36 @@
 #include "sound.h"
 #include <stdlib.h>
 #include <stdio.h>
-
-sound_t *white(float duree, int f_ech)
+#include <math.h>
+#define PI 3.1415
+sound_t *white(float T, int f_ech)
 {
     sound_t *s = malloc(sizeof(sound_t));
-    float t_ech = 1. / f_ech * 1.;
-    int n = duree / t_ech + 1;
+    int n = T * f_ech + 1;
 
     s->n_samples = n;
     s->samples = malloc(sizeof(int) * n);
-    int amplitude = 1 << (16 - 1); // L
+    int A = 1 << L, An = A / 2;
+
     for (int i = 0; i < n; i++)
     {
-        // printf("here\n");
-        s->samples[i] = rand() % amplitude;
+        int v = (rand() << 1) ^ rand();
+        s->samples[i] = (v % A) - An;
+
+        // if (s->samples[i] > 0)
+        //     printf("HERE\n");
+        printf("%d\n", s->samples[i]);
     }
+    return s;
+}
+
+sound_t *sine(float freq, int amplitude, float T, int f_ech)
+{
+    sound_t *s = malloc(sizeof(sound_t));
+    int n = T * f_ech + 1;
+    s->n_samples = n;
+    s->samples = malloc(sizeof(int) * n);
+    for (int i = 0; i < n; i++)
+        s->samples[i] = amplitude * sin(2 * PI * freq * i);
     return s;
 }

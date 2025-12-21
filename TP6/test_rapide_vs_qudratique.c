@@ -57,8 +57,6 @@ int partition_entre(int *T, int n, int a, int b)
     }
     swap(&T[a], &T[s]);
     return s;
-    // if (T[s])
-    // printf("%d %d\n", s, e);
 }
 
 void tri_rapide_entre(int *t, int n, int a, int b)
@@ -108,18 +106,9 @@ float test_tri_quadratique(int n)
 void main()
 {
     srand(time(NULL));
-    int a = 5, b = 9;
-    swap(&a, &b);
-    // printf("%d %d\n", a, b);
-    // int n = 8;
-    // int t[] = {8, 2, 6, 3, 4, 1, 4, 9};
-    // tri_rapide_entre(t, n, 0, n - 1);
-    // // partition(t, 7);
-    // // tri_selection(t, 7);
-    // for (int i = 0; i < n; i++)
-    //     printf("%d\n", t[i]);
+
     FILE *f2 = fopen("nn", "w"), *f1 = fopen("nlogn", "w");
-    for (int i = 100; i <= 4000; i += 100)
+    for (int i = 100; i <= 10000; i += 100)
     {
         printf("%d éléments\n", i);
         fprintf(f1, "%f\n", test_tri_rapide(i));

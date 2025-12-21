@@ -2,25 +2,26 @@
 #include "./sound.h"
 #include <stdio.h>
 
-const int L = 16;
 const int fech = 44100;
 
 void write_int(FILE *f, int a, int size)
 {
     // printf("%d %d\n", a, size);
-    int cnt = 0;
-    while (a > 0)
-    {
-        // printf("cnt:%d\n", cnt);
-        fprintf(f, "%c", a % 256);
-        a /= 256;
-        cnt++;
-    }
-    while (cnt < size)
-    {
-        fprintf(f, "%c", 0x00);
-        cnt++;
-    }
+    for (int i = 0; i < size; i++)
+        fputc(a & 0xff, f), a >>= 8;
+    // int cnt = 0;
+    // while (a > 0)
+    // {
+    //     // printf("cnt:%d\n", cnt);
+    //     fprintf(f, "%c", a % 256);
+    //     a /= 256;
+    //     cnt++;
+    // }
+    // while (cnt < size)
+    // {
+    //     fprintf(f, "%c", 0x00);
+    //     cnt++;
+    // }
     // printf("end: write_int\n");
 }
 

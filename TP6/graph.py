@@ -1,12 +1,16 @@
 import matplotlib.pyplot as plt
 
-f=open("nn","r")
-f2=open("nlogn","r")
-nlogn=f2.read()
-nn = f.read()
-x=list(range(100,4001,100))
+x = list(range(1000, 100001, 1000))
+for k in range(5, 101, 5):
+    f = open(f"tri_hybride_k{k}", "r")
+    vals = list(map(float, f.read().split()))
+    f.close()
+    # print(len(vals))
+    plt.plot(x, vals)
 
-plt.plot(x,list(map(float,nn.split())))
-plt.plot(x,list(map(float,nlogn.split())))
 
+plt.legend(tuple([f"K={k}" for k in range(5, 101, 5)]))
+plt.xlabel("Nombre de valeurs")
+plt.ylabel("Temps (en ms)")
+plt.title("Choix de K: comparaison")
 plt.show()
