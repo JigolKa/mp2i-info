@@ -1,5 +1,5 @@
-#include <stdint.h>
 #pragma once
+#include <stdint.h>
 #define L 16
 
 typedef struct sound

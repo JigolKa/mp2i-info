@@ -7,6 +7,8 @@
 #include <time.h>
 #include <stdlib.h>
 #include <time.h>
+#include "../extra/read_wav.h"
+#include <string.h>
 
 void tests_fonctions()
 {
@@ -75,26 +77,76 @@ char *get_size(int octets)
     return buf;
 }
 
+void test_base()
+{
+    int n = 3;
+    int16_t samples[3] = {15387, 815, -6337};
+    sound_t *s = malloc(sizeof(sound_t));
+    s->n_samples = n;
+    // memcp
+    s->samples = malloc(sizeof(int16_t) * n);
+    for (int i = 0; i < n; i++)
+        s->samples[i] = samples[i];
+    save_sound("./test45.wav", s);
+}
+
+void test_extra()
+{
+    sound_t *s = read_wav("./auclairdelalune.wav");
+    reverse_sound(s);
+    save_sound("./auclairdelalunereverse.wav", s);
+    // free_sound(s);
+}
+
+void handle_output(sound_t *res, int duree, char *output)
+{
+    int length = res->n_samples / 44100;
+    long int octets = res->n_samples * sizeof(int16_t);
+
+    printf("Fichier %s généré (temps écoulé: %ldms)\n", output, duree * 1000 / CLOCKS_PER_SEC);
+    printf("Durée du fichier: %s (taille %s)\n", get_time(length), get_size(octets));
+}
+
 int main(int argc, char **argv)
 {
+    // test_base();
+    test_extra();
+    // test_extra();
     srand(time(NULL));
     // test_mix();
-    if (argc != 3)
+    if (argc != 4)
     {
-        printf("Utilisation correcte: ./wav_writer fichier_entrée fichier_sortie");
-        return;
+        printf("Utilisation correcte: ./wav_writer <mode> <fichier_entrée> <fichier_sortie>\n");
+        printf("Modes différents:\n");
+        printf("\t- Mode 1: Utilisation normale (fichier_entrée: .txt, fichier_sortie: .wav)\n");
+        printf("\t- Mode 2: Fonctionnalité supplémentaire (renverser un son) (fichier_entrée: .wav, fichier_sortie: .wav)\n");
+        return 0;
     }
-    // assert(argc == 3);
 
-    clock_t start = clock();
-    mix_t *res = load_mix(argv[1]);
-    sound_t *s = reduce_mix(res);
-    save_sound(argv[2], s);
-    clock_t end = clock();
+    if (strcmp(argv[1], "1") == 0)
+    {
+        clock_t start = clock();
 
-    int duree = s->n_samples / 44100;
-    long int octets = s->n_samples * sizeof(int16_t);
+        mix_t *res = load_mix(argv[2]);
+        sound_t *s = reduce_mix(res);
+        save_sound(argv[3], s);
 
-    printf("Fichier %s généré (temps écoulé: %ldms)\n", argv[2], (end - start) * 1000 / CLOCKS_PER_SEC);
-    printf("Durée du fichier: %s (taille %s)\n", get_time(duree), get_size(octets));
+        clock_t end = clock();
+
+        handle_output(s, end - start, argv[3]);
+    }
+    else
+    {
+        clock_t start = clock();
+
+        sound_t *s = read_wav(argv[2]);
+        reverse_sound(s);
+        save_sound(argv[3], s);
+
+        clock_t end = clock();
+
+        handle_output(s, end - start, argv[3]);
+    }
+
+    return 0;
 }
