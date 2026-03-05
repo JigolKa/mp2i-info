@@ -34,6 +34,12 @@ let rec print_prefixe (N(x,l): 'a tree) : unit =
 let rec print_postfixe (N(x,l): 'a tree) : unit =
   List.iter print_postfixe l  ; print_int x ; print_string " " 
 
+let rec liste_prefixe (N(x,l): 'a tree) : 'a list =
+  x::(List.fold_left (@) [] (List.map liste_prefixe l))
+
+let rec liste_postfixe (N(x,l): 'a tree) : 'a list =
+  (List.fold_right (@) (List.map liste_postfixe l) []) @ [x]
+
 type 'a file = 'a list * 'a list (* (tete, queue) *)
 
 let file_vide () = ([], [])
@@ -47,10 +53,12 @@ let rec defiler ((t,q):'a file) : ('a * 'a file) =
   match t with
   | [] -> defiler (List.rev q, [])
   | d::t' -> (d,(t',q))
+
+let t = N(1, [N(2, []); N(3, [N(0, [])]); N(4, [])])
   
-let liste_largeur (a: 'a tree) =
+(* let liste_largeur (a: 'a tree) =
   let rec liste_largeur_file (f: 'a tree file) : 'a list =
-    
+    List.fold_left
   in 
   let file_depart = enfiler (file_vide) a in
-  liste_largeur_file file_depart
+  liste_largeur_file file_depart  *)
