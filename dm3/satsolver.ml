@@ -209,6 +209,91 @@ let satsolver_naif (f:formule) : sat_result =
 [("x",false);("y",true);("z",true)]
 *)
 
+let f' = Or(Var "x", Not(Var"x"))
+let f'' = Or(And(And(Var "x", Not(Var"y")), Var"z"), Or(And(Not(Var"x"),Not(Var"y")), And(And(Var"x",Var"y"),Var"z")))
+
+let rec simple_step (h: formule) : formule*bool = 
+  match h with
+  | And(Top, f) | And(f, Top) | Or(Bot,f) | Or(f,Bot) -> (f,true)
+  | And(Bot, f) | And(f, Bot) -> (Bot, true)
+  | Or(Top, f) | Or(f, Top) -> (Top, true)
+  | Not(Not(f)) -> (f,true)
+  | Not(Top) -> (Bot, true)
+  | Not(Bot) -> (Top, true)
+  | And(f,g) -> 
+    let (newf,ef)=simple_step f in
+    let (newg,eg)=simple_step g in
+    if not eg && not ef then (h,false)
+    else (And(newf,newg),true)
+  | Or(f,g) -> 
+    let (newf,ef)=simple_step f in
+    let (newg,eg)=simple_step g in
+    if not eg && not ef then (h,false)
+    else (Or(newf,newg),true)
+  | Not(f) -> let (newf, ef) = simple_step f in
+    if ef then (Not(newf),true) else (h,false)
+  | _ -> (h, false)
+
+let rec simple_full (f: formule) : formule =
+  let continue = ref true in
+  let formula = ref f in
+  while !continue do
+    (* print_string "here\n"; *)
+    let (new_formula, eff) = simple_step !formula in
+    continue := eff;
+    formula := new_formula
+  done; !formula
+    
+let rec subst (f: formule) (x: string) (g: formule) : formule = 
+  match f with
+  | And(a,b) -> And(subst a x g, subst b x g)
+  | Or(a,b) -> Or(subst a x g, subst b x g)
+  | Not(a) -> Not(subst a x g)
+  | Var(x') -> if x=x' then g else f
+  | _ -> f
+
+let rec string_of_formule f =
+  match f with
+  | Var s -> s
+  | Top -> "⊤"
+  | Bot -> "⊥"
+  | And (f1, f2) ->
+      "(" ^ string_of_formule f1 ^ " ∧ " ^ string_of_formule f2 ^ ")"
+  | Or (f1, f2) ->
+      "(" ^ string_of_formule f1 ^ " ∨ " ^ string_of_formule f2 ^ ")"
+  | Not f1 ->
+      "¬" ^ string_of_formule f1
+
+let rec quine (f: formule) : sat_result =
+  print_string "formula: ";
+  print_endline (string_of_formule f);
+  let variables = liste_var f in
+  if List.length variables = 0 then Some([])
+  else
+    begin
+      let var = List.hd variables in
+      print_string "littéral choisi:";
+      print_endline(var);
+    let f_top = simple_full (subst f var Bot) in
+    print_string "Après simplification:";
+    print_endline (string_of_formule f_top);
+    let result = quine f_top in
+    match result with
+    | Some(x) -> Some ((var,false)::x)
+    | None ->
+      let f_bot = simple_full (subst f var Top) in
+      let result2 = quine f_bot in
+      match result2 with
+      | None -> None
+      | Some(x) -> Some ((var,true)::x)
+    end
+
+
+
+
+
+
+
 let test () = 
   test_parse (); test_from_file ();
   assert (sorted_list [1;2;4;6]);

@@ -79,7 +79,7 @@ char *chemin_glouton(grille_t *g)
 		if (choix)
 			j++;
 		else
-			j++;
+			i++;
 	}
 	return res;
 }
@@ -91,9 +91,9 @@ int main(int argc, char **argv)
 
 	assert(argc > 1);
 	grille_t *g = lire_grille(argv[1]);
-	char *chemin = chemin_glouton(g);
+	char *chemin = chemin_aleatoire(g);
 	printf("%s %d\n", chemin, valeur(g, chemin));
-	printf("%d\n", choix_glouton(g, 0, 3));
+	// printf("%d\n", choix_glouton(g, 0, 3));
 
 	afficher_grille(g);
 

@@ -9,6 +9,14 @@ let rec est_tas (t: 'a array) (i: int) : bool=
   (if gauche i < n then t.(gauche i) <= t.(i) && est_tas t (gauche i) else true)
   && (if droite i < n then t.(droite i) <= t.(i) && est_tas t (droite i) else true)
 
+let est_tas (t: 'a array) (i: int) : bool =
+  let res = ref true in
+  for j=1 to i-1 do
+    let p = parent i in
+    if t.(p) >  t.(j) then res := false
+    done; !res
+
+
 let echanger (t:'a array) (i:int)(j:int):unit=
   let tmp = t.(i) in 
   t.(i)<-t.(j);
