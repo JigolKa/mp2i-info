@@ -86,7 +86,7 @@ let parse (s: string) : formule =
 					if (s.[j] != ')') then (print_int j; failwith "mauvais parenthésage") else
 					parse_aux (i+1) (j-1)
 				end
-			else if (i = j && s.[i] = 'T') then Top
+			else if (i = j && (s.[i] = 'T'||s.[i]='1')) then Top
 			else if (i = j && s.[i] = 'F') then Bot
 			else let nom_variable = String.sub s i (j-i+1) in 
 			if String.contains nom_variable ' ' then raise Erreur_syntaxe else Var nom_variable
@@ -252,7 +252,7 @@ let rec subst (f: formule) (x: string) (g: formule) : formule =
   | Var(x') -> if x=x' then g else f
   | _ -> f
 
-let rec string_of_formule f =
+(* let rec string_of_formule f =
   match f with
   | Var s -> s
   | Top -> "⊤"
@@ -262,33 +262,47 @@ let rec string_of_formule f =
   | Or (f1, f2) ->
       "(" ^ string_of_formule f1 ^ " ∨ " ^ string_of_formule f2 ^ ")"
   | Not f1 ->
-      "¬" ^ string_of_formule f1
+      "¬" ^ string_of_formule f1 *)
 
 let rec quine (f: formule) : sat_result =
-  print_string "formula: ";
-  print_endline (string_of_formule f);
+  (* print_string "formula: ";
+  print_endline (string_of_formule f); *)
   let variables = liste_var f in
-  if List.length variables = 0 then Some([])
+  if List.length variables = 0 then (match f with
+    | Top-> Some([])
+  |Bot -> None
+  | _->failwith"impossible")
   else
     begin
       let var = List.hd variables in
-      print_string "littéral choisi:";
-      print_endline(var);
-    let f_top = simple_full (subst f var Bot) in
-    print_string "Après simplification:";
-    print_endline (string_of_formule f_top);
+      (* print_string "littéral choisi:";
+      print_endline(var); *)
+    let f_top = simple_full (subst f var Top) in
+    (* print_string "Après simplification:";
+    print_endline (string_of_formule f_top); *)
     let result = quine f_top in
     match result with
-    | Some(x) -> Some ((var,false)::x)
+    | Some(x) -> Some ((var,true)::x)
     | None ->
-      let f_bot = simple_full (subst f var Top) in
+      let f_bot = simple_full (subst f var Bot) in
       let result2 = quine f_bot in
       match result2 with
       | None -> None
-      | Some(x) -> Some ((var,true)::x)
+      | Some(x) -> Some ((var,false)::x)
     end
 
 
+let print_true (v: valuation) : unit =
+  let trues = List.filter (fun x -> snd x = true) v in
+  let n =List.length trues in
+  if n = 0 then
+    print_endline "Mettre toutes les variables à 0!"
+  else
+    print_endline "Mettre ces variables à 1 et les autres à 0:";
+    for i=0 to n-1 do
+      print_endline (fst (List.nth trues i))
+    done
+    
 
 
 
@@ -312,9 +326,19 @@ let test () =
   print_string "Tests OK\n"
 
 let main () =
-  test();
   match Array.length Sys.argv with
   | 1 -> failwith "Pas d'arguments"
-  | _ -> print_string (read_file (Sys.argv.(1)))
+  | _ -> 
+    let filename = Sys.argv.(1) in
+    match filename with
+    | "test" -> test()
+    | t ->
+    begin
+    let formula = from_file t in
+    let result = quine formula in
+    match result with
+    | None -> print_endline "Formule insatisfiable!"
+    | Some(x) -> print_true x
+    end
 
 let _ = main()
