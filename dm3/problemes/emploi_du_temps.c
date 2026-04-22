@@ -34,13 +34,16 @@ char *_contrainte_un_cours_par_creneau_par_groupe_par_jour(int id, int jour, int
 char *_contrainte_un_cours_par_creneau_tous_les_jours(int id)
 {
     char **creneaux = malloc(sizeof(char *) * 15); // 15=3 creneaux * 5 jours
+    int idx = 0;
     for (int i = 0; i <= 4; i++)
     {
         for (int j = 0; j <= 2; j++)
         {
             char *pour_le_creneau_j = _contrainte_un_cours_par_creneau_par_groupe_par_jour(id, i, j);
             // int sz = strlen(pour_le_creneau_j);
-            creneaux[3 * i + j] = pour_le_creneau_j;
+            printf("%s\n", pour_le_creneau_j);
+            creneaux[idx] = pour_le_creneau_j;
+            idx++;
         }
     }
     return toutes(creneaux, 15);
@@ -50,8 +53,10 @@ char *contrainte1()
 {
     char *grp1 = _contrainte_un_cours_par_creneau_tous_les_jours(0);
     char *grp2 = _contrainte_un_cours_par_creneau_tous_les_jours(1);
-    char *ens[2] = {grp1, grp2};
-    return toutes(ens, 2);
+    int sz = strlen(grp1) + strlen(grp2) + 3;
+    char *s = malloc(sizeof(char) * (sz + 1));
+    sprintf(s, "(%s&%s)", grp1, grp2);
+    return s;
 }
 
 /**
@@ -189,15 +194,20 @@ char *contrainte6()
  */
 char *_c7_exactement_3_creneaux_par_groupe_par_matiere(int id, int matiere)
 {
-    char **res = malloc(sizeof(char *) * (15 * 14 * 13));
+    int sz = 15 * 14 * 13;
+    char **res = malloc(sizeof(char *) * sz);
     int idx = 0;
     for (int c1 = 0; c1 < 15; c1++)
         for (int c2 = c1 + 1; c2 < 15; c2++)
             for (int c3 = c2 + 1; c3 < 15; c3++)
             {
-                int jour1 = c1 / 5, creneau1 = c1 % 3;
-                int jour2 = c2 / 5, creneau2 = c2 % 3;
-                int jour3 = c3 / 5, creneau3 = c3 % 3;
+                int jour1 = c1 / 3, creneau1 = c1 % 3;
+                int jour2 = c2 / 3, creneau2 = c2 % 3;
+                int jour3 = c3 / 3, creneau3 = c3 % 3;
+                printf("%d %d\n", jour1, creneau1);
+                printf("%d %d\n", jour2, creneau2);
+                printf("%d %d\n", jour3, creneau3);
+
                 char *s = malloc(sizeof(char) * (4 + 1 + 3 * VAR_SZ));
                 sprintf(s,
                         "(%s&%s&%s)",
@@ -205,17 +215,20 @@ char *_c7_exactement_3_creneaux_par_groupe_par_matiere(int id, int matiere)
                         variable(id, jour2, creneau2, matiere),
                         variable(id, jour3, creneau3, matiere));
                 res[idx] = s;
+                printf("%s\n", s);
                 idx++;
             }
-    return toutes((char *[]){au_moins_une(res, 2), au_plus_une(res, 2)}, 2);
+    // return toutes((char *[]){au_moins_une(res, 2), au_plus_une(res, 2)}, 2);
+    return au_moins_une(res, sz);
+    // return "";
 }
 
 char *contrainte7()
 {
     return toutes((char *[]){
+                      _c7_exactement_3_creneaux_par_groupe_par_matiere(0, 0),
                       _c7_exactement_3_creneaux_par_groupe_par_matiere(0, 1),
                       _c7_exactement_3_creneaux_par_groupe_par_matiere(0, 2),
-                      _c7_exactement_3_creneaux_par_groupe_par_matiere(0, 3),
                       _c7_exactement_3_creneaux_par_groupe_par_matiere(1, 0),
                       _c7_exactement_3_creneaux_par_groupe_par_matiere(1, 1),
                       _c7_exactement_3_creneaux_par_groupe_par_matiere(1, 2)},
@@ -224,17 +237,22 @@ char *contrainte7()
 
 void test()
 {
-    printf("%s\n", contrainte1());
-    printf("%s\n", contrainte2());
-    printf("%s\n", contrainte3());
-    printf("%s\n", contrainte4());
-    printf("%s\n", contrainte5());
-    printf("%s\n", contrainte6());
+    // printf("%s\n", contrainte1());
+    // printf("%s\n", contrainte2());
+    // printf("%s\n", contrainte3());
+    // printf("%s\n", contrainte4());
+    // printf("%s\n", contrainte5());
+    // printf("%s\n", contrainte6());
     printf("%s\n", contrainte7());
 }
 
 int main()
 {
+    // test();
+    // char *s = contrainte1();
+    // printf("%s\n", s);
+    // _contrainte_un_cours_par_creneau_tous_les_jours(0);
+
     char *contraintes[7] = {
         contrainte1(),
         contrainte2(),
@@ -242,10 +260,13 @@ int main()
         contrainte4(),
         contrainte5(),
         contrainte6(),
-        contrainte7()};
-    FILE *f = fopen("emploi_du_temps_formule.txt", "w");
-    fprintf(f, "%s", toutes(contraintes, 7));
-    fclose(f);
+        contrainte7(),
+    };
+    // char *s = toutes(contraintes, 7);
+    printf("%s\n", _c7_exactement_3_creneaux_par_groupe_par_matiere(0, 0));
+    // FILE *f = fopen("emploi_du_temps_formule.txt", "w");
+    // fprintf(f, "%s", toutes(contraintes, 7));
+    // fclose(f);
     // char *s = _contrainte_un_cours_par_creneau_par_groupe_par_jour(0, 0, 0);
     // char *s2 = contrainte1();
     // printf("%s\n", s);

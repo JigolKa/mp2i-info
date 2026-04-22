@@ -36,18 +36,19 @@ char *toutes(char **l, int n)
     if (n == 1)
         return l[0];
 
-    int len_res = 0;
+    int S = 0;
     for (int i = 0; i < n; i++)
     {
         // printf("%s %ld\n", l[i], strlen(l[i]));
-        len_res += strlen(l[i]);
+        S += strlen(l[i]);
     }
-    int size_res = len_res + 3 * (n - 1) + 2;
+    printf("here\n");
+    int sz = S + 3 * (n - 1) + 2;
     // printf("sz: %d\n", size_res);
-    char *res = malloc(sizeof(char) * (size_res + 1));
+    char *res = malloc(sizeof(char) * (sz + 1));
     int idx = 1;
     res[0] = '(';
-    res[size_res - 1] = ')';
+    res[sz - 1] = ')';
     for (int i = 0; i < n; i++)
     {
         int m = strlen(l[i]);
@@ -66,10 +67,10 @@ char *toutes(char **l, int n)
 
 char *aucun(char **l, int n)
 {
-    char *_au_plus_un = au_plus_une(l, n);
-    int len = strlen(_au_plus_un);
-    char *res = malloc(sizeof(char) * (len + 3));
-    sprintf(res, "~(%s)", _au_plus_un);
+    char *s = toutes(l, n);
+    int len = strlen(s);
+    char *res = malloc(sizeof(char) * (len + 4));
+    sprintf(res, "~(%s)", s);
     return res;
 }
 
@@ -142,27 +143,17 @@ char *aucun(char **l, int n)
 
 static char *make_clause(const char *a, const char *b)
 {
-    size_t len = strlen(a) + strlen(b) + 8; // "(~a|~b)" + '\0' + marge
-    char *s = malloc(len);
-    if (s == NULL)
-    {
-        return NULL;
-    }
-    snprintf(s, len, "(~%s|~%s)", a, b);
+    size_t len = strlen(a) + strlen(b) + 6; // "(~a|~b)" + '\0'
+    char *s = malloc(len * sizeof(char));
+    sprintf(s, "(~%s|~%s)", a, b);
     return s;
 }
 
 static char *append_and(char *left, const char *right)
 {
-    size_t len = strlen(left) + strlen(right) + 2; // '&' + '\0'
-    char *s = malloc(len);
-    if (s == NULL)
-    {
-        free(left);
-        return NULL;
-    }
-    snprintf(s, len, "%s&%s", left, right);
-    free(left);
+    size_t len = strlen(left) + strlen(right) + 1 + 1; // '&' + '\0'
+    char *s = malloc(len * sizeof(char));
+    sprintf(s, "%s&%s", left, right);
     return s;
 }
 
@@ -188,11 +179,6 @@ char *au_plus_une(char **l, int n)
         for (int j = i + 1; j < n; j++)
         {
             char *clause = make_clause(l[i], l[j]);
-            if (clause == NULL)
-            {
-                free(res);
-                return NULL;
-            }
 
             if (res == NULL)
             {
@@ -201,11 +187,6 @@ char *au_plus_une(char **l, int n)
             else
             {
                 res = append_and(res, clause);
-                free(clause);
-                if (res == NULL)
-                {
-                    return NULL;
-                }
             }
         }
     }
