@@ -194,7 +194,7 @@ char *contrainte6()
  */
 char *_c7_exactement_3_creneaux_par_groupe_par_matiere(int id, int matiere)
 {
-    int sz = 15 * 14 * 13;
+    int sz = 455; // 3 parmi 15
     char **res = malloc(sizeof(char *) * sz);
     int idx = 0;
     for (int c1 = 0; c1 < 15; c1++)
@@ -218,8 +218,10 @@ char *_c7_exactement_3_creneaux_par_groupe_par_matiere(int id, int matiere)
                 printf("%s\n", s);
                 idx++;
             }
-    // return toutes((char *[]){au_moins_une(res, 2), au_plus_une(res, 2)}, 2);
-    return au_moins_une(res, sz);
+    return toutes((char *[]){au_moins_une(res, sz), au_plus_une(res, sz)}, 2);
+    // return au_moins_une(res, sz);
+    // printf("%d\n", idx);
+    // return "";
     // return "";
 }
 
