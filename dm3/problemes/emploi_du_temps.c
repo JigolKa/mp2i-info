@@ -3,9 +3,9 @@
 #include "./utils.h"
 #include <string.h>
 
-const int VAR_SZ = 9;
+const int VAR_SZ = 4;
 /**
- * renvoie X_{id}_{jour}_{créneau}_{type}
+ * renvoie {id}{jour}{créneau}{type}
  * id correspond au numéro de groupe (0 ou 1)
  * jour correspond à: 0 = lundi, ..., 4 = vendredi
  * créneau correspond à l'heure du créneau: 0=[9h,12h], 1=[12h,15h], 2=[15h,18h]
@@ -14,7 +14,7 @@ const int VAR_SZ = 9;
 char *variable(int id, int jour, int creneau, int matiere)
 {
     char *s = malloc(sizeof(char) * (VAR_SZ + 1));
-    sprintf(s, "X_%d_%d_%d_%d", id, jour, creneau, matiere);
+    sprintf(s, "%d%d%d%d", id, jour, creneau, matiere);
     return s;
 }
 
@@ -194,34 +194,63 @@ char *contrainte6()
  */
 char *_c7_exactement_3_creneaux_par_groupe_par_matiere(int id, int matiere)
 {
-    int sz = 455; // 3 parmi 15
+    int sz = 0;
+    // valeurs trouvées expérimentalement
+    switch (matiere)
+    {
+    case 0:
+        sz = 32;
+        break;
+    case 1:
+        sz = 192;
+        break;
+    case 2:
+        sz = 40;
+        break;
+    }
     char **res = malloc(sizeof(char *) * sz);
     int idx = 0;
-    for (int c1 = 0; c1 < 15; c1++)
-        for (int c2 = c1 + 1; c2 < 15; c2++)
-            for (int c3 = c2 + 1; c3 < 15; c3++)
+    for (int c1 = 0; c1 < 12; c1++)
+        for (int c2 = c1 + 1; c2 < 12; c2++)
+            for (int c3 = c2 + 1; c3 < 12; c3++)
             {
                 int jour1 = c1 / 3, creneau1 = c1 % 3;
                 int jour2 = c2 / 3, creneau2 = c2 % 3;
                 int jour3 = c3 / 3, creneau3 = c3 % 3;
-                printf("%d %d\n", jour1, creneau1);
-                printf("%d %d\n", jour2, creneau2);
-                printf("%d %d\n", jour3, creneau3);
 
-                char *s = malloc(sizeof(char) * (4 + 1 + 3 * VAR_SZ));
+                // contrainte 2
+                if (abs(jour1 - jour2) == 1 && creneau1 == creneau2 && creneau1 == 2)
+                    continue;
+                if (abs(jour1 - jour3) == 1 && creneau1 == creneau3 && creneau1 == 2)
+                    continue;
+                if (abs(jour2 - jour3) == 1 && creneau2 == creneau3 && creneau2 == 2)
+                    continue;
+
+                // contrainte 3 et 4
+                if (matiere == 0 && (jour1 == jour2 || jour2 == jour3 || jour1 == jour3 || creneau1 == 2 || creneau2 == 2 || creneau3 == 2))
+                    continue;
+
+                if (matiere == 2 && (creneau1 == 0 || creneau2 == 0 || creneau3 == 0))
+                    continue;
+                // printf("%d %d\n", jour1, creneau1);
+                // printf("%d %d\n", jour2, creneau2);
+                // printf("%d %d\n", jour3, creneau3);
+
+                char *s = malloc(sizeof(char) * (2 + 1 + 3 * VAR_SZ));
                 sprintf(s,
-                        "(%s&%s&%s)",
+                        "%s&%s&%s",
                         variable(id, jour1, creneau1, matiere),
                         variable(id, jour2, creneau2, matiere),
                         variable(id, jour3, creneau3, matiere));
                 res[idx] = s;
-                printf("%s\n", s);
+                // printf("%s\n", s);
                 idx++;
             }
-    return toutes((char *[]){au_moins_une(res, sz), au_plus_une(res, sz)}, 2);
-    // return au_moins_une(res, sz);
+    printf("idx: %d\n", idx); // printf("idx: djzd %d\n", idx);
+    // return toutes((char *[]){au_moins_une(res, sz), au_plus_une(res, sz)}, 2);
+    return au_plus_une(res, sz);
     // printf("%d\n", idx);
-    // return "";
+    return "";
     // return "";
 }
 
@@ -262,7 +291,7 @@ int main()
         contrainte4(),
         contrainte5(),
         contrainte6(),
-        contrainte7(),
+        // contrainte7(),
     };
     // char *s = toutes(contraintes, 7);
     printf("%s\n", _c7_exactement_3_creneaux_par_groupe_par_matiere(0, 0));
