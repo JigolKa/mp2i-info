@@ -11,8 +11,8 @@ char *au_moins_une(char **l, int n)
         // printf("%s\n", l[i]);
         len_res += strlen(l[i]);
     }
-    int size_res = len_res + n + 1;
-    char *res = malloc(sizeof(char) * size_res);
+    int size_res = len_res + n - 1 + 2;
+    char *res = malloc(sizeof(char) * (size_res + 1));
     int idx = 1;
     res[0] = '(';
     res[size_res - 1] = ')';
@@ -44,7 +44,7 @@ char *toutes(char **l, int n)
     }
     int size_res = len_res + 3 * (n - 1) + 2;
     // printf("sz: %d\n", size_res);
-    char *res = malloc(sizeof(char) * size_res);
+    char *res = malloc(sizeof(char) * (size_res + 1));
     int idx = 1;
     res[0] = '(';
     res[size_res - 1] = ')';
