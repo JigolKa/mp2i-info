@@ -5,6 +5,7 @@ type formule =
 	| And of formule * formule
 	| Or of formule * formule
 	| Not of formule
+  | EO of formule*formule
 
 type valuation = (string*bool) list
 
@@ -26,11 +27,12 @@ exception Fichier_invalide
 	'~' -> Not
 	'>' -> implication
 	'=' -> equivalence
+  '%' -> EO (exactement un)
  *)
 
 (* Détermine si c correspond à un opérateur binaire logique *)
 let is_binop (c: char) : bool = match c with 
-	| '&' |  '|' |  '>' |  '='  -> true
+	| '&' |  '|' |  '>' |  '=' | '%'  -> true
 	| _ -> false 
 
 (* Priorité de l'opérateur c. Permet de déterminer
@@ -38,6 +40,7 @@ let is_binop (c: char) : bool = match c with
 	Par exemple, "x&y|z" sera interprété comme "(x&y)|z"
 	car & est plus prioritaire que | *)
 let priority (c: char) : int = match c with
+  | '%' -> 5
 	| '&' -> 4
 	| '|' -> 3
 	| '=' -> 2
@@ -92,6 +95,7 @@ let parse (s: string) : formule =
 			if String.contains nom_variable ' ' then raise Erreur_syntaxe else Var nom_variable
 
 		else match s.[k] with
+			| '%' -> EO(parse_aux i (k-1), parse_aux (k+1) j)
 			| '&' -> And(parse_aux i (k-1), parse_aux (k+1) j)
 			| '|' -> Or(parse_aux i (k-1), parse_aux (k+1) j)
 			| '=' -> equivalence(parse_aux i (k-1), parse_aux (k+1) j)
@@ -248,6 +252,7 @@ let rec subst (f: formule) (x: string) (g: formule) : formule =
   match f with
   | And(a,b) -> And(subst a x g, subst b x g)
   | Or(a,b) -> Or(subst a x g, subst b x g)
+  | EO(a,b) -> EO(subst a x g, subst b x g)
   | Not(a) -> Not(subst a x g)
   | Var(x') -> if x=x' then g else f
   | _ -> f
