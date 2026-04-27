@@ -125,8 +125,8 @@ let test_parse () =
   assert (parse "a | b" = Or(Var "a", Var "b"))
 
 let test_from_file () =
-  assert (from_file "./tests/a" = Or(Var "a", And(Var "b", Not(Var "c"))));
-  assert (from_file "./tests/b" = Or(Var "a", Not(And(Var "b", Var "c"))))
+  assert (from_file "./tests/a.txt" = Or(Var "a", And(Var "b", Not(Var "c"))));
+  assert (from_file "./tests/b.txt" = Or(Var "a", Not(And(Var "b", Var "c"))))
 
 
 
@@ -367,23 +367,30 @@ let test () =
   assert (valuation_init ["x";"y"] = [("x",false);("y",false)]);
   assert (satsolver_naif (And(Var "x", Var"y")) = Some [("x", true); ("y", true)]);
   assert (satsolver_naif (And(Var "x", Not(Var "x"))) = None);
+  assert (quine ftest  = Some [("x", true); ("y", false); ("z", false)]);
+  assert (quine ftest2 = Some [("x", true); ("y", false)]);
+  assert (quine ftest3 = Some [("x", false); ("y", true)]);
+  assert (quine ftest4 = None);
+  assert (quine ftest5 = Some [("x", true); ("y", false)]);
   print_string "Tests OK\n"
 
 let main () =
   match Array.length Sys.argv with
   | 1 -> failwith "Pas d'arguments"
   | _ -> 
+  begin
     let filename = Sys.argv.(1) in
     match filename with
     | "test" -> test()
-    | t ->
+    | _ ->
     begin
-    let formula = from_file t in
+    let formula = from_file filename in
     (* print_endline (string_of_formule formula); *)
     let result = quine formula in
     match result with
     | None -> print_endline "Formule insatisfiable!"
     | Some(x) -> print_true x
     end
+  end
 
 let _ = main()

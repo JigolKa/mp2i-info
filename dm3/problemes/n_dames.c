@@ -30,6 +30,7 @@ char *variable(int i, int j)
  * Contrainte 1:
  * Exactement 1 reine sur chaque ligne
  */
+// taille: O(nlog10n)
 char *contrainte_une_ligne(int i, int n)
 {
     char **variables = malloc(sizeof(char *) * n);
@@ -44,6 +45,7 @@ char *contrainte_une_ligne(int i, int n)
     return res;
 }
 
+// taille: O(n²log10n)
 char *contrainte_toutes_lignes(int n)
 {
     char **contraintes = malloc(sizeof(char *) * n);
@@ -62,6 +64,7 @@ char *contrainte_toutes_lignes(int n)
  * Contrainte 2:
  * Au plus une reine sur chaque colonne
  */
+// taille: O(n²log10n)
 char *contrainte_une_colonne(int j, int n)
 {
     char **variables = malloc(sizeof(char *) * n);
@@ -77,6 +80,7 @@ char *contrainte_une_colonne(int j, int n)
     return res;
 }
 
+// taille: O(n³log10n)
 char *contrainte_toutes_colonnes(int n)
 {
     char **contraintes = malloc(sizeof(char *) * n);
