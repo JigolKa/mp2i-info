@@ -9,6 +9,11 @@
 char *au_moins_une(char **l, int n);
 
 /**
+ * utilise le nouvel opérateur %
+ */
+char *exactement_une(char **l, int n);
+
+/**
  * renvoie la conjonction
  */
 char *toutes(char **l, int n);

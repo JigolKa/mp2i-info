@@ -31,6 +31,34 @@ char *au_moins_une(char **l, int n)
     return res;
 }
 
+char *exactement_une(char **l, int n)
+{
+    int len_res = 0;
+    for (int i = 0; i < n; i++)
+    {
+        // printf("%s\n", l[i]);
+        len_res += strlen(l[i]);
+    }
+    int size_res = len_res + n - 1 + 2;
+    char *res = malloc(sizeof(char) * (size_res + 1));
+    int idx = 1;
+    res[0] = '(';
+    res[size_res - 1] = ')';
+    for (int i = 0; i < n; i++)
+    {
+        int m = strlen(l[i]);
+        for (int j = 0; j < m; j++)
+        {
+            res[idx] = l[i][j];
+            idx++;
+        }
+        if (i != n - 1)
+            res[idx] = '%',
+            idx++;
+    }
+    return res;
+}
+
 char *toutes(char **l, int n)
 {
     if (n == 1)
@@ -141,42 +169,95 @@ char *aucun(char **l, int n)
 //     return res;
 // }
 
+// char *au_plus_une(char **l, int n)
+// {
+//     if (n <= 1)
+//     {
+//         char *s = malloc(2);
+//         strcpy(s, "1");
+//         return s;
+//     }
+
+//     // Calcul de la taille exacte
+//     // Chaque clause : "~(li&lj)" = 3 + len(li) + len(lj) chars
+//     // Entre clauses : "&"
+//     int nb_clauses = n * (n - 1) / 2;
+//     size_t total = 0;
+//     for (int i = 0; i < n; i++)
+//         for (int j = i + 1; j < n; j++)
+//             total += 3 + strlen(l[i]) + strlen(l[j]);
+//     total += nb_clauses - 1; // les '&'
+//     total += 1;              // '\0'
+
+//     char *res = malloc(total * sizeof(char));
+//     if (!res)
+//         return NULL;
+
+//     char *ptr = res;
+//     int first = 1;
+//     for (int i = 0; i < n; i++)
+//     {
+//         for (int j = i + 1; j < n; j++)
+//         {
+//             if (!first)
+//                 *ptr++ = '&';
+//             ptr += sprintf(ptr, "~(%s&%s)", l[i], l[j]);
+//             first = 0;
+//         }
+//     }
+//     *ptr = '\0';
+//     return res;
+// }
+
+static char *make_clause(const char *a, const char *b)
+{
+    size_t len = strlen(a) + strlen(b) + 6; // "(~a|~b)" + '\0'
+    char *s = malloc(len * sizeof(char));
+    sprintf(s, "(~%s|~%s)", a, b);
+    return s;
+}
+
+static char *append_and(char *left, const char *right)
+{
+    size_t len = strlen(left) + strlen(right) + 1 + 1; // '&' + '\0'
+    char *s = malloc(len * sizeof(char));
+    sprintf(s, "%s&%s", left, right);
+    return s;
+}
+
+/**
+ * pour l = x1, ..., xn,
+ * renvoie (~x1|~x2)&(~x1|~x3)&...&(~x(n-1)|~xn)
+ */
 char *au_plus_une(char **l, int n)
 {
     if (n <= 1)
     {
         char *s = malloc(2);
-        strcpy(s, "1");
+        if (s == NULL)
+            return NULL;
+        strcpy(s, "1"); // formule toujours vraie
         return s;
     }
 
-    // Calcul de la taille exacte
-    // Chaque clause : "~(li&lj)" = 3 + len(li) + len(lj) chars
-    // Entre clauses : "&"
-    int nb_clauses = n * (n - 1) / 2;
-    size_t total = 0;
-    for (int i = 0; i < n; i++)
-        for (int j = i + 1; j < n; j++)
-            total += 3 + strlen(l[i]) + strlen(l[j]);
-    total += nb_clauses - 1; // les '&'
-    total += 1;              // '\0'
+    char *res = NULL;
 
-    char *res = malloc(total);
-    if (!res)
-        return NULL;
-
-    char *ptr = res;
-    int first = 1;
     for (int i = 0; i < n; i++)
     {
         for (int j = i + 1; j < n; j++)
         {
-            if (!first)
-                *ptr++ = '&';
-            ptr += sprintf(ptr, "~(%s&%s)", l[i], l[j]);
-            first = 0;
+            char *clause = make_clause(l[i], l[j]);
+
+            if (res == NULL)
+            {
+                res = clause;
+            }
+            else
+            {
+                res = append_and(res, clause);
+            }
         }
     }
-    *ptr = '\0';
+
     return res;
 }

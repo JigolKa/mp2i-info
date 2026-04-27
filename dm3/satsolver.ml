@@ -89,7 +89,7 @@ let parse (s: string) : formule =
 					if (s.[j] != ')') then (print_int j; failwith "mauvais parenthésage") else
 					parse_aux (i+1) (j-1)
 				end
-			else if (i = j && (s.[i] = 'T'||s.[i]='1')) then Top
+			else if (i = j && s.[i] = 'T') then Top
 			else if (i = j && s.[i] = 'F') then Bot
 			else let nom_variable = String.sub s i (j-i+1) in 
 			if String.contains nom_variable ' ' then raise Erreur_syntaxe else Var nom_variable
@@ -166,8 +166,17 @@ let rec liste_var (f: formule) : string list =
   | Top | Bot -> []
   | Var(s) -> [s]
   | Not(a) -> liste_var a
-  | And(a,b) | Or(a,b) -> (liste_var a) @ (liste_var b)
+  | And(a,b) | Or(a,b) | EO(a,b) -> (liste_var a) @ (liste_var b)
 
+let bool_of_int (x: int) : bool = if x=0 then false else true
+let int_of_bool (x: bool) : int = if x then 1 else 0
+
+let valtest = [("x",false);("y",true);("z",true)]
+let ftest = EO(Var"x",EO(Var"y",Var"z"))
+let ftest2 = EO(Var"x", And(Var"x",Var"y"))
+let ftest3 = EO(Var"x", Or(Var"x",Var"y"))
+let ftest4 = EO(Var "x", Var "x")
+let ftest5 = EO(Var"x", EO(Var "y", And(Var "x", Var "y")))
 
 let rec evaluate (s: valuation) (f: formule) : bool =
   match f with
@@ -177,6 +186,19 @@ let rec evaluate (s: valuation) (f: formule) : bool =
   | Not(a) -> not (evaluate s a)
   | And(a,b) -> (evaluate s a) && (evaluate s b)
   | Or(a,b) -> (evaluate s a) || (evaluate s b)
+
+
+let  eval_EO (s:valuation) (f:formule) : bool= 
+  let rec eval_aux (f:formule) : int =
+    match f with
+    | Top -> 1
+    | Bot -> 0
+    | Var(m) -> int_of_bool(List.assoc m s)
+    | EO(a,b) -> eval_aux a + eval_aux b
+    | Not(a) -> 1- (eval_aux a)
+    | And(a,b) -> (eval_aux a) * (eval_aux b)
+    | Or(a,b) -> min 1 ((eval_aux a) + (eval_aux b))
+  in eval_aux f = 1
 
 let rec add_one (l: bool list) : bool list = 
   match l with
@@ -216,6 +238,12 @@ let satsolver_naif (f:formule) : sat_result =
 let f' = Or(Var "x", Not(Var"x"))
 let f'' = Or(And(And(Var "x", Not(Var"y")), Var"z"), Or(And(Not(Var"x"),Not(Var"y")), And(And(Var"x",Var"y"),Var"z")))
 
+let rec negation_EO (f: formule) : formule =
+  match f with
+  | Var(s) -> Not(Var s)
+  | EO(a,b) -> And(negation_EO a, negation_EO b)
+  | _ -> Not f
+
 let rec simple_step (h: formule) : formule*bool = 
   match h with
   | And(Top, f) | And(f, Top) | Or(Bot,f) | Or(f,Bot) -> (f,true)
@@ -234,6 +262,15 @@ let rec simple_step (h: formule) : formule*bool =
     let (newg,eg)=simple_step g in
     if not eg && not ef then (h,false)
     else (Or(newf,newg),true)
+  | EO(Bot,Bot) | EO(Top,Top) -> (Bot,true)
+  | EO(Bot,Top) | EO(Top,Bot) -> (Top, true)
+  | EO(Bot, f) -> (f, true)
+  | EO(Top, f) -> (negation_EO f,true)
+  | EO(a,b) -> 
+    let (newf,ef)=simple_step a in
+    let (newg,eg)=simple_step b in
+    if not eg && not ef then (h,false)
+    else (EO(newf,newg),true)
   | Not(f) -> let (newf, ef) = simple_step f in
     if ef then (Not(newf),true) else (h,false)
   | _ -> (h, false)
@@ -257,7 +294,7 @@ let rec subst (f: formule) (x: string) (g: formule) : formule =
   | Var(x') -> if x=x' then g else f
   | _ -> f
 
-(* let rec string_of_formule f =
+let rec string_of_formule f =
   match f with
   | Var s -> s
   | Top -> "⊤"
@@ -267,7 +304,9 @@ let rec subst (f: formule) (x: string) (g: formule) : formule =
   | Or (f1, f2) ->
       "(" ^ string_of_formule f1 ^ " ∨ " ^ string_of_formule f2 ^ ")"
   | Not f1 ->
-      "¬" ^ string_of_formule f1 *)
+      "¬" ^ string_of_formule f1
+    | EO(a,b) ->      "(" ^ string_of_formule a ^ " % " ^ string_of_formule b ^ ")"
+
 
 let rec quine (f: formule) : sat_result =
   (* print_string "formula: ";
@@ -276,7 +315,7 @@ let rec quine (f: formule) : sat_result =
   if List.length variables = 0 then (match f with
     | Top-> Some([])
   |Bot -> None
-  | _->failwith"impossible")
+  | _->(print_endline (string_of_formule f); failwith"impossible"))
   else
     begin
       let var = List.hd variables in
@@ -340,6 +379,7 @@ let main () =
     | t ->
     begin
     let formula = from_file t in
+    print_endline (string_of_formule formula);
     let result = quine formula in
     match result with
     | None -> print_endline "Formule insatisfiable!"

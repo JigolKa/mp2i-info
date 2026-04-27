@@ -19,6 +19,31 @@ char *variable(int id, int jour, int creneau, int matiere)
 }
 
 /**
+ * Contrainte 0:
+ * un prof à un seul cours à la fois
+ */
+char *_c0_par_jour_par_creneau_par_matiere(int jour, int creneau, int matiere)
+{
+    return au_plus_une((char *[]){variable(0, jour, creneau, matiere), variable(1, jour, creneau, matiere)}, 2);
+}
+
+char *contrainte0()
+{
+    char **s = malloc(sizeof(char *) * 15);
+    for (int i = 0; i < 5; i++)
+        for (int j = 0; j < 3; j++)
+        {
+            s[3 * i + j] = toutes((char *[]){
+                                      _c0_par_jour_par_creneau_par_matiere(i, j, 0),
+                                      _c0_par_jour_par_creneau_par_matiere(i, j, 1),
+                                      _c0_par_jour_par_creneau_par_matiere(i, j, 2),
+                                  },
+                                  3);
+        }
+    return toutes(s, 15);
+}
+
+/**
  * Contrainte 1:
  * au plus un cours par créneau
  */
@@ -63,33 +88,31 @@ char *contrainte1()
  * Contrainte 2:
  * aucun élève ne finit 2 jours d'affilée à 18h
  */
-char *_contrainte_2_par_eleve_par_cours(int id, int type)
+char *_contrainte_2_par_eleve(int id)
 {
     /**
      * 4 clauses
      * => 3 &
      * + 4*(2S+4)
      */
-    char *res = malloc(sizeof(char) * (7 + 4 * (2 * VAR_SZ + 4) + 1));
+    // char *res = malloc(sizeof(char) * (3 + 4 * 3 * 3 * (2 * VAR_SZ + 4) + 1));
+    int sz = 4 * 3 * 3;
+    char **res = malloc(sizeof(char *) * sz);
     int idx = 0;
     for (int i = 0; i <= 3; i++)
     {
-        char clause[2 * VAR_SZ + 4 + 1];
-        sprintf(clause, "~(%s&%s)", variable(id, i, 2, type), variable(id, i + 1, 2, type));
-        // printf("%s %ld\n", clause, strlen(clause));
-        if (i != 0)
-            sprintf(res, "%s&%s", res, clause);
-        else
-            sprintf(res, "%s", clause);
+        for (int m1 = 0; m1 < 3; m1++)
+            for (int m2 = 0; m2 < 3; m2++)
+            {
+                char *clause = malloc(sizeof(char) * (2 * VAR_SZ + 4 + 1));
+                sprintf(clause, "~(%s&%s)", variable(id, i, 2, m1), variable(id, i + 1, 2, m2));
+                // printf("%s %ld\n", clause, strlen(clause));
+                res[idx++] = clause;
+            }
     }
-    return res;
-}
-char *_contrainte_2_par_eleve(int id)
-{
-    char *maths = _contrainte_2_par_eleve_par_cours(id, 0);
-    char *phys = _contrainte_2_par_eleve_par_cours(id, 1);
-    char *info = _contrainte_2_par_eleve_par_cours(id, 2);
-    return toutes((char *[3]){maths, info, phys}, 3);
+    // printf("idxlkzef,zekl:%d\n", idx);
+    return toutes(res, sz);
+    return "";
 }
 
 char *contrainte2()
@@ -199,20 +222,20 @@ char *_c7_exactement_3_creneaux_par_groupe_par_matiere(int id, int matiere)
     switch (matiere)
     {
     case 0:
-        sz = 32;
+        sz = 80;
         break;
     case 1:
-        sz = 192;
+        sz = 406;
         break;
     case 2:
-        sz = 40;
+        sz = 91;
         break;
     }
     char **res = malloc(sizeof(char *) * sz);
     int idx = 0;
-    for (int c1 = 0; c1 < 12; c1++)
-        for (int c2 = c1 + 1; c2 < 12; c2++)
-            for (int c3 = c2 + 1; c3 < 12; c3++)
+    for (int c1 = 0; c1 < 15; c1++)
+        for (int c2 = c1 + 1; c2 < 15; c2++)
+            for (int c3 = c2 + 1; c3 < 15; c3++)
             {
                 int jour1 = c1 / 3, creneau1 = c1 % 3;
                 int jour2 = c2 / 3, creneau2 = c2 % 3;
@@ -236,9 +259,9 @@ char *_c7_exactement_3_creneaux_par_groupe_par_matiere(int id, int matiere)
                 // printf("%d %d\n", jour2, creneau2);
                 // printf("%d %d\n", jour3, creneau3);
 
-                char *s = malloc(sizeof(char) * (2 + 1 + 3 * VAR_SZ));
+                char *s = malloc(sizeof(char) * (4 + 1 + 3 * VAR_SZ));
                 sprintf(s,
-                        "%s&%s&%s",
+                        "(%s&%s&%s)",
                         variable(id, jour1, creneau1, matiere),
                         variable(id, jour2, creneau2, matiere),
                         variable(id, jour3, creneau3, matiere));
@@ -248,8 +271,9 @@ char *_c7_exactement_3_creneaux_par_groupe_par_matiere(int id, int matiere)
             }
     printf("idx: %d\n", idx); // printf("idx: djzd %d\n", idx);
     // return toutes((char *[]){au_moins_une(res, sz), au_plus_une(res, sz)}, 2);
-    return au_plus_une(res, sz);
+    // return au_plus_une(res, sz);
     // printf("%d\n", idx);
+    return exactement_une(res, sz);
     return "";
     // return "";
 }
@@ -284,17 +308,20 @@ int main()
     // printf("%s\n", s);
     // _contrainte_un_cours_par_creneau_tous_les_jours(0);
 
-    char *contraintes[7] = {
+    char *contraintes[8] = {
+        contrainte0(),
         contrainte1(),
         contrainte2(),
         contrainte3(),
         contrainte4(),
         contrainte5(),
         contrainte6(),
-        // contrainte7(),
+        contrainte7(),
     };
-    // char *s = toutes(contraintes, 7);
-    printf("%s\n", _c7_exactement_3_creneaux_par_groupe_par_matiere(0, 0));
+    char *s = toutes(contraintes, 8);
+    printf("%s\n", s);
+    // printf("%s\n", contrainte7());
+    // printf("%s\n", _c7_exactement_3_creneaux_par_groupe_par_matiere(0, 1));
     // FILE *f = fopen("emploi_du_temps_formule.txt", "w");
     // fprintf(f, "%s", toutes(contraintes, 7));
     // fclose(f);
