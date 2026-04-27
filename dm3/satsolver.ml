@@ -379,7 +379,7 @@ let main () =
     | t ->
     begin
     let formula = from_file t in
-    print_endline (string_of_formule formula);
+    (* print_endline (string_of_formule formula); *)
     let result = quine formula in
     match result with
     | None -> print_endline "Formule insatisfiable!"

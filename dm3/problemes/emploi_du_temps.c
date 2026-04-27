@@ -301,12 +301,19 @@ void test()
     printf("%s\n", contrainte7());
 }
 
-int main()
+int main(int argc, char **argv)
 {
     // test();
     // char *s = contrainte1();
     // printf("%s\n", s);
     // _contrainte_un_cours_par_creneau_tous_les_jours(0);
+    if (argc != 2)
+    {
+        printf("Utilisation: ./emploi_du_temps fichier_de_sortie\n");
+        return 0;
+    }
+
+    FILE *f = fopen(argv[1], "w");
 
     char *contraintes[8] = {
         contrainte0(),
@@ -319,18 +326,7 @@ int main()
         contrainte7(),
     };
     char *s = toutes(contraintes, 8);
-    printf("%s\n", s);
-    // printf("%s\n", contrainte7());
-    // printf("%s\n", _c7_exactement_3_creneaux_par_groupe_par_matiere(0, 1));
-    // FILE *f = fopen("emploi_du_temps_formule.txt", "w");
-    // fprintf(f, "%s", toutes(contraintes, 7));
-    // fclose(f);
-    // char *s = _contrainte_un_cours_par_creneau_par_groupe_par_jour(0, 0, 0);
-    // char *s2 = contrainte1();
     // printf("%s\n", s);
-    // printf("%s\n", s2);
-    // char *s = _contrainte_2_par_eleve_par_cours(0, 0);
-    // char *s = contrainte3();
-    // printf("%s\n", s);
-    // printf("%s\n", aucun((char *[3]){"x", "y", "z"}, 3));
+    fprintf(f, "%s\n", s);
+    fclose(f);
 }

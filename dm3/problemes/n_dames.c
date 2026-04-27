@@ -15,78 +15,92 @@ int taille_entier(int x)
 
 int sz_var(int i, int j)
 {
-    return 4 + taille_entier(i) + taille_entier(j);
+    return 3 + taille_entier(i) + taille_entier(j);
 }
 
 // taille = O(ceil(log10n))
 char *variable(int i, int j)
 {
-    char *res = malloc(sizeof(char) * sz_var(i, j));
+    char *res = malloc(sizeof(char) * (sz_var(i, j) + 1));
     sprintf(res, "X_%d_%d", i, j);
     return res;
 }
 
-// taille = O(n²*log10n)
+/**
+ * Contrainte 1:
+ * Exactement 1 reine sur chaque ligne
+ */
 char *contrainte_une_ligne(int i, int n)
 {
     char **variables = malloc(sizeof(char *) * n);
     for (int j = 0; j < n; j++)
     {
-        variables[j] = malloc(sizeof(char) * sz_var(i, j));
-        char *t = variable(i, j);
-        strcpy(variables[j], t);
+        variables[j] = variable(i, j);
     }
-    char *dis = au_moins_une(variables, n);
-    char *con = au_plus_une(variables, n);
-
-    printf("sz: %ld\n", strlen(dis));
-
-    printf("sz: %ld\n", strlen(con));
-
-    char *s[2] = {con, dis};
-    return toutes(s, 2);
+    char *res = exactement_une(variables, n);
+    for (int i = 0; i < n; i++)
+        free(variables[i]);
+    free(variables);
+    return res;
 }
 
-// taille = O(n³log10n)
 char *contrainte_toutes_lignes(int n)
 {
     char **contraintes = malloc(sizeof(char *) * n);
     for (int i = 0; i < n; i++)
     {
-        contraintes[i] = malloc(sizeof(char) * 500);
         contraintes[i] = contrainte_une_ligne(i, n);
     }
-    return toutes(contraintes, n);
+    char *res = toutes(contraintes, n);
+    for (int i = 0; i < n; i++)
+        free(contraintes[i]);
+    free(contraintes);
+    return res;
 }
 
-// taille = O(n²*log10n)
+/**
+ * Contrainte 2:
+ * Au plus une reine sur chaque colonne
+ */
 char *contrainte_une_colonne(int j, int n)
 {
     char **variables = malloc(sizeof(char *) * n);
     for (int i = 0; i < n; i++)
     {
-        variables[i] = malloc(sizeof(char) * sz_var(i, j)); // 10 = 2log10n+3
         variables[i] = variable(i, j);
     }
-    return au_plus_une(variables, n);
+    char *res = au_plus_une(variables, n);
+    for (int i = 0; i < n; i++)
+        free(variables[i]);
+    free(variables);
+
+    return res;
 }
 
-// taille = O(n³log10n)
 char *contrainte_toutes_colonnes(int n)
 {
     char **contraintes = malloc(sizeof(char *) * n);
     for (int j = 0; j < n; j++)
     {
-        contraintes[j] = malloc(sizeof(char) * 500);
         contraintes[j] = contrainte_une_colonne(j, n);
     }
-    return toutes(contraintes, n);
+    char *res = toutes(contraintes, n);
+    for (int i = 0; i < n; i++)
+        free(contraintes[i]);
+    free(contraintes);
+    return res;
 }
 
-// taille = O(n²*log10n)?
 /**
- * la diagonale va de haut en bas
- * et part de (i,j)
+ * Contrainte 3:
+ * Au plus une reine sur toutes les diagonales
+ */
+/**
+ * la diagonale va de haut en bas vers la droite
+ * [\,0,0,0]
+ * [0,\,0,0]
+ * [0,0,\,0]
+ * [0,0,0,\]
  */
 char *contrainte_diagonales_A(int i, int j, int n)
 {
@@ -97,18 +111,23 @@ char *contrainte_diagonales_A(int i, int j, int n)
     while (i + k >= 0 && i + k < n && j + k < n && j + k >= 0)
     {
         // printf("(%d,%d)\n", i + k, j + k);
-        variables[k] = malloc(sizeof(char) * sz_var(i, j)); // 10 = 2log10n+3
         variables[k] = variable(i + k, j + k);
         // printf("%s\n", variables[k]);
         k++;
     }
-    return au_plus_une(variables, sz);
+    char *res = au_plus_une(variables, sz);
+    for (int i = 0; i < sz; i++)
+        free(variables[i]);
+    free(variables);
+    return res;
 }
 
-// taille = O(n²*log10n)?
 /**
- * la diagonale va de haut en bas
- * et part de (i,j)
+ * la diagonale va de bas en haut vers la droite
+ * [0,0,0,/]
+ * [0,0,/,0]
+ * [0,/,0,0]
+ * [/,0,0,0]
  */
 char *contrainte_diagonales_B(int i, int j, int n)
 {
@@ -118,48 +137,51 @@ char *contrainte_diagonales_B(int i, int j, int n)
     while (i - k >= 0 && i - k < n && j + k < n && j + k >= 0)
     {
         // printf("(%d,%d)\n", i - k, j + k);
-        variables[k] = malloc(sizeof(char) * sz_var(i, j)); // 10 = 2log10n+3
         variables[k] = variable(i - k, j + k);
         // printf("%s\n", variables[k]);
         k++;
     }
-    return au_plus_une(variables, sz);
+    char *res = au_plus_une(variables, sz);
+    for (int i = 0; i < sz; i++)
+        free(variables[i]);
+    free(variables);
+    return res;
 }
 
-// taille = O(n³log10n)
 char *contrainte_toutes_diagonales(int n)
 {
-    int sz = 4 * n - 2;
+    int sz = 4 * n - 2 - 4;
     char **contraintes = malloc(sizeof(char *) * sz);
     int idx = 0;
-    int threshold = 500;
-    for (int j = 0; j < n; j++)
+    for (int j = 0; j < n - 1; j++)
     {
-        contraintes[idx] = malloc(sizeof(char) * threshold);
         contraintes[idx] = contrainte_diagonales_A(j, 0, n);
+        idx++;
+    }
+    for (int j = 1; j < n - 1; j++)
+    {
+        contraintes[idx] = contrainte_diagonales_A(0, j, n);
         idx++;
     }
     for (int j = 1; j < n; j++)
     {
-        contraintes[idx] = malloc(sizeof(char) * threshold);
-        contraintes[idx] = contrainte_diagonales_A(0, j, n);
-        idx++;
-    }
-    for (int j = 0; j < n; j++)
-    {
-        contraintes[idx] = malloc(sizeof(char) * threshold);
         contraintes[idx] = contrainte_diagonales_B(j, 0, n);
         idx++;
     }
     // printf("here %d %d\n", idx, sz);
-    for (int j = 1; j < n; j++)
+    for (int j = 1; j < n - 1; j++)
     {
-        contraintes[idx] = malloc(sizeof(char) * threshold);
         contraintes[idx] = contrainte_diagonales_B(n - 1, j, n);
         idx++;
     }
     // printf("here\n");
-    return toutes(contraintes, sz);
+    char *res = toutes(contraintes, sz);
+    for (int i = 0; i < sz; i++)
+    {
+        free(contraintes[i]);
+    }
+    free(contraintes);
+    return res;
 }
 
 void gen_formule_n_dames(int n, char *filename)
@@ -171,23 +193,19 @@ void gen_formule_n_dames(int n, char *filename)
     char *r[3] = {a, b, c};
     char *res = toutes(r, 3);
     fprintf(f, "%s", res);
+    free(a), free(b), free(c);
+    free(res);
     fclose(f);
 }
 
 int main()
 {
-    // printf("%s\n", contrainte_une_ligne(0, 25));
-    // for (int i = 0; i < 25; i++)
-    //     for (int j = 0; j < 25; j++)
-    //         printf("%s\n", variable(i, j));
-    int x;
+    int n;
     char filename[50];
     printf("n=");
-    scanf("%d", &x);
+    scanf("%d", &n);
     printf("nom de fichier=");
     scanf("%s", filename);
 
-    assert(x <= 9);
-
-    gen_formule_n_dames(x, filename);
+    gen_formule_n_dames(n, filename);
 }

@@ -209,7 +209,7 @@ char *aucun(char **l, int n)
 //     return res;
 // }
 
-static char *make_clause(const char *a, const char *b)
+char *make_clause(char *a, char *b)
 {
     size_t len = strlen(a) + strlen(b) + 6; // "(~a|~b)" + '\0'
     char *s = malloc(len * sizeof(char));
@@ -217,7 +217,7 @@ static char *make_clause(const char *a, const char *b)
     return s;
 }
 
-static char *append_and(char *left, const char *right)
+char *append_and(char *left, char *right)
 {
     size_t len = strlen(left) + strlen(right) + 1 + 1; // '&' + '\0'
     char *s = malloc(len * sizeof(char));
@@ -234,8 +234,6 @@ char *au_plus_une(char **l, int n)
     if (n <= 1)
     {
         char *s = malloc(2);
-        if (s == NULL)
-            return NULL;
         strcpy(s, "1"); // formule toujours vraie
         return s;
     }
@@ -254,7 +252,10 @@ char *au_plus_une(char **l, int n)
             }
             else
             {
-                res = append_and(res, clause);
+                char *new = append_and(res, clause);
+                free(res);
+                free(clause);
+                res = new;
             }
         }
     }
