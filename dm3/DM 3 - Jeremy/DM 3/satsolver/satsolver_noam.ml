@@ -166,7 +166,7 @@ let rec liste_var (f: formule) : string list =
   | Top | Bot -> []
   | Var(s) -> [s]
   | Not(a) -> liste_var a
-  | And(a,b) | Or(a,b) | EO(a,b) -> union (liste_var a) (liste_var b)
+  | And(a,b) | Or(a,b) | EO(a,b) -> (liste_var a) @ (liste_var b)
 
 let bool_of_int (x: int) : bool = if x=0 then false else true
 let int_of_bool (x: bool) : int = if x then 1 else 0
@@ -231,6 +231,9 @@ let satsolver_naif (f:formule) : sat_result =
       end
   in eval f (valuation_init (liste_var f))
 
+(*
+[("x",false);("y",true);("z",true)]
+*)
 
 let f' = Or(Var "x", Not(Var"x"))
 let f'' = Or(And(And(Var "x", Not(Var"y")), Var"z"), Or(And(Not(Var"x"),Not(Var"y")), And(And(Var"x",Var"y"),Var"z")))
@@ -254,13 +257,11 @@ let rec simple_step (h: formule) : formule*bool =
     let (newg,eg)=simple_step g in
     if not eg && not ef then (h,false)
     else (And(newf,newg),true)
-
   | Or(f,g) -> 
     let (newf,ef)=simple_step f in
     let (newg,eg)=simple_step g in
     if not eg && not ef then (h,false)
     else (Or(newf,newg),true)
-
   | EO(Bot,Bot) | EO(Top,Top) -> (Bot,true)
   | EO(Bot,Top) | EO(Top,Bot) -> (Top, true)
   | EO(Bot, f) -> (f, true)
@@ -270,7 +271,6 @@ let rec simple_step (h: formule) : formule*bool =
     let (newg,eg)=simple_step b in
     if not eg && not ef then (h,false)
     else (EO(newf,newg),true)
-
   | Not(f) -> let (newf, ef) = simple_step f in
     if ef then (Not(newf),true) else (h,false)
   | _ -> (h, false)
@@ -307,31 +307,10 @@ let rec string_of_formule f =
       "¬" ^ string_of_formule f1
     | EO(a,b) ->      "(" ^ string_of_formule a ^ " % " ^ string_of_formule b ^ ")"
 
-(* Implémentation proposée en Q25 *)
-let count_occurrences (f : formule) : (string * int) list =
-  let tbl = Hashtbl.create 16 in
-  let rec aux = function
-    | Var x ->
-        let n = try Hashtbl.find tbl x with Not_found -> 0 in
-        Hashtbl.replace tbl x (n + 1)
-    | Top | Bot -> ()
-    | Not f1        -> aux f1
-    | And (f1, f2)
-    | Or  (f1, f2)
-    | EO  (f1, f2)  -> aux f1; aux f2
-  in
-  aux f;
-  Hashtbl.fold (fun var count acc -> (var, count) :: acc) tbl []
-
-let choose_var (f : formule) : string =
-  let occ = count_occurrences f in
-  fst (List.fold_left
-    (fun (bv, bmax) (v, c) -> if c > bmax then (v, c) else (bv, bmax))
-    (List.hd occ) (List.tl occ))
-
 
 let rec quine (f: formule) : sat_result =
-  
+  (* print_string "formula: ";
+  print_endline (string_of_formule f); *)
   let variables = liste_var f in
   if List.length variables = 0 then (match f with
     | Top-> Some([])
@@ -340,9 +319,11 @@ let rec quine (f: formule) : sat_result =
   else
     begin
       let var = List.hd variables in
-      
+      (* print_string "littéral choisi:";
+      print_endline(var); *)
     let f_top = simple_full (subst f var Top) in
-    
+    (* print_string "Après simplification:";
+    print_endline (string_of_formule f_top); *)
     let result = quine f_top in
     match result with
     | Some(x) -> Some ((var,true)::x)
@@ -404,7 +385,7 @@ let main () =
     | _ ->
     begin
     let formula = from_file filename in
-    
+    (* print_endline (string_of_formule formula); *)
     let result = quine formula in
     match result with
     | None -> print_endline "Formule insatisfiable!"

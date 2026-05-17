@@ -66,7 +66,7 @@ char *_contrainte_un_cours_par_creneau_tous_les_jours(int id)
         {
             char *pour_le_creneau_j = _contrainte_un_cours_par_creneau_par_groupe_par_jour(id, i, j);
             // int sz = strlen(pour_le_creneau_j);
-            printf("%s\n", pour_le_creneau_j);
+            // printf("%s\n", pour_le_creneau_j);
             creneaux[idx] = pour_le_creneau_j;
             idx++;
         }

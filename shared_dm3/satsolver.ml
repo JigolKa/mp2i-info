@@ -171,8 +171,7 @@ let rec liste_var (f: formule) : string list =
 let bool_of_int (x: int) : bool = if x=0 then false else true
 let int_of_bool (x: bool) : int = if x then 1 else 0
 
-let valtest = [("x",false);("y",true);("z",true)]
-let ftest = EO(Var"x",EO(Var"y",Var"z"))
+let ftest1 = EO(Var"x",EO(Var"y",Var"z"))
 let ftest2 = EO(Var"x", And(Var"x",Var"y"))
 let ftest3 = EO(Var"x", Or(Var"x",Var"y"))
 let ftest4 = EO(Var "x", Var "x")
@@ -373,20 +372,27 @@ let print_true (v: valuation) : unit =
 
 let test () = 
   test_parse (); test_from_file ();
+
   assert (sorted_list [1;2;4;6]);
   assert (not (sorted_list [1;2;4;4]));
   assert (union [1;2;4] [3;5;6;7] = [1; 2; 3; 4; 5; 6; 7]);
+
   assert (liste_var (parse "x|(y&~z)") = ["x"; "y"; "z"]);
   assert (evaluate [("x",true);("y",false)] (Or(Var "x",Var"y")) = true);
+
   assert (add_one [false; true] = [true;true]);
   assert (add_one [true;true;false]=[false;false;true]);
   assert (add_one [true;true]=[false;false;true]);
+
   assert (valuation_next [("x",true);("y",true);("z",true)] = None);
   assert (valuation_next [("x",true);("y",false);("z",true)] = Some ([("x",false);("y",true);("z",true)]));
   assert (valuation_init ["x";"y"] = [("x",false);("y",false)]);
+
   assert (satsolver_naif (And(Var "x", Var"y")) = Some [("x", true); ("y", true)]);
   assert (satsolver_naif (And(Var "x", Not(Var "x"))) = None);
-  assert (quine ftest  = Some [("x", true); ("y", false); ("z", false)]);
+
+  (* Tests de l'opérateur % *)
+  assert (quine ftest1  = Some [("x", true); ("y", false); ("z", false)]);
   assert (quine ftest2 = Some [("x", true); ("y", false)]);
   assert (quine ftest3 = Some [("x", false); ("y", true)]);
   assert (quine ftest4 = None);
